@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>X Consulting — Workforce Consultancy | Portuguese-Speaking Talent for Portugal &amp; Germany</title>
-<meta name="description" content="X Consulting helps businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking workers from Mozambique, Angola and other Lusophone countries. Recruitment, cultural integration, employer consulting and workforce training in one consultancy.">
+<title>A&amp;D Consulting — International Workforce Consultancy | Portuguese-Speaking Talent for Portugal &amp; Germany</title>
+<meta name="description" content="A&amp;D Consulting helps businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking workers from Mozambique, Angola and other Lusophone countries. Recruitment, cultural integration, employer consulting and workforce training in one consultancy.">
 <meta name="keywords" content="Portuguese-speaking workers, recruitment Portugal, recruitment Germany, Mozambique workers, Angola recruitment, workforce consultancy, international recruitment, employee integration, cultural integration, workforce training, employer support, skilled labour Portugal, skilled labour Germany">
-<meta name="theme-color" content="#0E1E42">
-<meta property="og:title" content="X Consulting — Workforce Consultancy">
+<meta name="theme-color" content="#34497A">
+<meta property="og:title" content="A&amp;D Consulting — International Workforce Consultancy">
 <meta property="og:description" content="Building stronger teams through skilled Portuguese-speaking talent. Recruitment, relocation, integration and workforce development for employers in Portugal and Germany.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://meridante-dev.github.io/ponte-workforce/">
 <meta property="og:image" content="https://meridante-dev.github.io/ponte-workforce/assets/construction.jpg">
 <link rel="canonical" href="https://meridante-dev.github.io/ponte-workforce/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M8 48 C 8 26, 56 26, 56 48' fill='none' stroke='%231E3A8A' stroke-width='7' stroke-linecap='round'/><path d='M20 48 C 20 36, 44 36, 44 48' fill='none' stroke='%23B45309' stroke-width='5' stroke-linecap='round'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text x='32' y='47' font-family='Georgia,serif' font-size='50' fill='%23C6A15B' text-anchor='middle'>%26</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Figtree:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Manrope:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "X Consulting",
+  "name": "A&D Consulting",
   "description": "Consultancy helping businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking workers from Mozambique, Angola and other Lusophone countries.",
   "areaServed": ["Portugal", "Germany"],
   "knowsLanguage": ["pt", "en", "de"],
@@ -33,23 +33,31 @@
 </script>
 <style>
 :root{
-  --navy:#0E1E42;
-  --royal:#1E3A8A;
-  --royal-2:#2949A7;
-  --royal-tint:#EEF2FB;
-  --gold:#A16207;
-  --gold-2:#B45309;
-  --gold-bright:#C98A3B;
-  --gold-line:#D9B87C;
-  --ink:#101828;
-  --muted:#5B6879;
-  --faint:#667085;
-  --faint-deco:#98A2B3;
-  --bg:#FFFFFF;
-  --bg-soft:#F7F9FC;
-  --border:#E6EAF1;
-  --serif:"Fraunces",Georgia,serif;
-  --sans:"Figtree",-apple-system,"Helvetica Neue",sans-serif;
+  /* --- A&D Consulting brand ---
+     Premium Gold #C6A15B and Premium Blue #4E6FAE are the brand values.
+     Gold measures 2.5:1 on Warm Ivory, so it carries rules/frames/logo only;
+     gold TEXT uses --gold (#8A6A2F, 4.5:1) and --gold-bright on dark grounds. */
+  --gold-brand:#C6A15B;      /* Premium Gold — exact brand value */
+  --gold:#8A6A2F;            /* AA-safe gold text on ivory */
+  --gold-2:#8A6A2F;
+  --gold-bright:#D9B87C;     /* gold text on dark grounds */
+  --gold-line:#C6A15B;       /* decorative hairlines — brand gold */
+  --royal:#4E6FAE;           /* Premium Blue — exact brand value */
+  --royal-2:#3E5C96;
+  --royal-tint:#E9EEF7;
+  --navy:#1E2A44;            /* ink / headings (derived) */
+  --deep:#34497A;            /* dark grounds (derived from Premium Blue) */
+  --ink:#1E2A44;
+  --muted:#56617A;
+  --faint:#5F6879;
+  --faint-deco:#9AA0AE;
+  --bg:#F7F2E8;              /* Warm Ivory — exact brand value */
+  --bg-soft:#EFE9DC;         /* derived, between ivory and taupe */
+  --taupe:#E6E2DA;           /* Soft Taupe — exact brand value */
+  --card:#FFFFFF;
+  --border:#E2DBCB;
+  --serif:"Fraunces",Georgia,serif;      /* stand-in for Canela (licensed) */
+  --sans:"Manrope",-apple-system,"Helvetica Neue",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,monospace;
   --wrap:1180px;
   --gut:clamp(22px,4.5vw,48px);
@@ -58,8 +66,8 @@
   --r-pill:999px;
   --sp-2:16px;--sp-3:24px;--sp-4:40px;
   --ease:cubic-bezier(.22,.8,.24,1);
-  --shadow-1:0 1px 2px rgba(16,24,40,.04),0 8px 28px rgba(16,24,40,.06);
-  --shadow-2:0 2px 6px rgba(14,30,66,.06),0 24px 60px rgba(14,30,66,.10);
+  --shadow-1:0 1px 2px rgba(60,48,30,.05),0 8px 28px rgba(60,48,30,.07);
+  --shadow-2:0 2px 6px rgba(60,48,30,.07),0 24px 60px rgba(60,48,30,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html.lenis,html.lenis body{height:auto}
@@ -72,7 +80,7 @@ button{font-family:inherit;cursor:pointer}
 ::selection{background:var(--royal);color:#fff}
 ::-webkit-scrollbar{width:11px}
 ::-webkit-scrollbar-track{background:var(--bg-soft)}
-::-webkit-scrollbar-thumb{background:#9AA7BC;border-radius:100px;border:3px solid var(--bg-soft)}
+::-webkit-scrollbar-thumb{background:#B9AE96;border-radius:100px;border:3px solid var(--bg-soft)}
 ::-webkit-scrollbar-thumb:hover{background:var(--royal)}
 :focus-visible{outline:2px solid var(--royal);outline-offset:3px;border-radius:4px}
 .process :focus-visible,.pkg-flagship :focus-visible,.band :focus-visible,footer :focus-visible{outline-color:var(--gold-line)}
@@ -92,12 +100,16 @@ html.cine .veil{display:grid}
 .veil{position:fixed;inset:0;z-index:100;place-items:center;pointer-events:none}
 .veil svg.veil-bg{position:absolute;inset:0;width:100%;height:100%}
 .veil-mark{position:relative;display:grid;place-items:center;gap:18px}
-.veil-mark svg{width:74px;height:74px;overflow:visible}
+.veil-mono{
+  font-family:var(--serif);font-size:3.1rem;font-weight:500;line-height:1;letter-spacing:-.02em;
+  background:linear-gradient(140deg,#E3C892 0%,#C6A15B 45%,#9E7A34 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;
+}
 .veil-word{font-family:var(--serif);font-size:1.5rem;font-weight:500;color:#F0EDE6;letter-spacing:.6em;text-indent:.6em;opacity:0}
 .veil-sub{font-family:var(--mono);font-size:.68rem;letter-spacing:.3em;color:rgba(217,184,124,.8);text-transform:uppercase;opacity:0}
 /* "X CONSULTING" is long; at .6em tracking it overruns narrow screens */
 @media(max-width:560px){
-  .veil-mark svg{width:58px;height:58px}
+  .veil-mono{font-size:2.3rem}
   .veil-word{font-size:1.05rem;letter-spacing:.34em;text-indent:.34em}
   .veil-sub{font-size:.58rem;letter-spacing:.22em}
 }
@@ -128,18 +140,30 @@ section{padding:clamp(90px,10vw,138px) 0}
 .btn:hover svg{transform:translateX(5px)}
 .btn-primary{background:var(--royal);color:#fff}
 .btn-primary:hover{background:var(--royal-2);box-shadow:0 12px 30px rgba(30,58,138,.30)}
-.btn-ghost{border-color:var(--border);color:var(--navy);background:#fff}
+.btn-ghost{border-color:var(--border);color:var(--ink);background:var(--card)}
 .btn-ghost:hover{border-color:var(--royal);color:var(--royal)}
 
 /* ---------- nav ---------- */
 header{position:fixed;inset:0 0 auto 0;z-index:60;background:transparent;border-bottom:1px solid transparent;transition:background-color .45s var(--ease),border-color .45s var(--ease),transform .5s var(--ease)}
-header.scrolled{background:rgba(255,255,255,.86);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-bottom-color:var(--border)}
+header.scrolled{background:rgba(247,242,232,.88);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-bottom-color:var(--border)}
 header.hid{transform:translateY(-102%)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:80px}
-.logo{display:flex;align-items:center;gap:12px}
-.logo svg{width:34px;height:34px}
-.logo-name{font-family:var(--serif);font-size:1.42rem;font-weight:560;color:var(--navy);letter-spacing:.01em}
-.logo-name span{color:var(--gold-2)}
+.logo{display:flex;align-items:center;gap:11px}
+.logo-mark{
+  font-family:var(--serif);font-size:1.85rem;font-weight:500;line-height:.9;
+  letter-spacing:-.02em;white-space:nowrap;
+  background:linear-gradient(140deg,#E3C892 0%,var(--gold-brand) 42%,#9E7A34 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.logo-lockup{display:flex;flex-direction:column;gap:2px}
+.logo-name{
+  font-family:var(--serif);font-size:1.02rem;font-weight:400;color:var(--ink);
+  letter-spacing:.14em;text-transform:uppercase;line-height:1;
+}
+.logo-sub{
+  font-family:var(--mono);font-size:.5rem;font-weight:500;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--faint);line-height:1;white-space:nowrap;
+}
 .nav-links{display:flex;gap:36px;align-items:center}
 .nav-links a{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);position:relative;padding:6px 0}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--gold-2);transition:width .4s var(--ease)}
@@ -166,12 +190,12 @@ header.hid{transform:translateY(-102%)}
 .hero-visual{position:relative}
 .hero-photo{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-2);position:relative;aspect-ratio:4/4.6}
 .hero-photo img{width:100%;height:100%;object-fit:cover}
-.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,30,66,0) 52%,rgba(14,30,66,.42)),linear-gradient(100deg,rgba(14,30,66,.14),transparent 46%);pointer-events:none}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,42,68,0) 52%,rgba(30,42,68,.44)),linear-gradient(100deg,rgba(30,42,68,.16),transparent 46%);pointer-events:none}
 .hero-frame{position:absolute;top:26px;left:-26px;right:26px;bottom:-26px;border:1px solid var(--gold-line);border-radius:var(--r);z-index:-1}
 /* hero testimonial banner — shown only when a real, approved quote exists.
    To publish: set data-ready="true" on .hero-testi and fill in the real words.
    While it is "true" the plain .hero-card is hidden automatically. */
-.hero-testi{position:absolute;left:-44px;bottom:36px;width:min(370px,86%);background:#fff;border:1px solid var(--border);border-left:2px solid var(--gold-line);border-radius:var(--r);box-shadow:var(--shadow-2);padding:26px 28px}
+.hero-testi{position:absolute;left:-44px;bottom:36px;width:min(370px,86%);background:var(--card);border:1px solid var(--border);border-left:2px solid var(--gold-line);border-radius:var(--r);box-shadow:var(--shadow-2);padding:26px 28px}
 .hero-testi[data-ready="false"]{display:none}
 .hero-visual:has(.hero-testi[data-ready="true"]) .hero-card{display:none}
 .hero-testi blockquote{font-family:var(--serif);font-size:1.02rem;line-height:1.55;color:var(--navy);font-weight:400;text-wrap:pretty}
@@ -182,7 +206,7 @@ header.hid{transform:translateY(-102%)}
 .hero-testi figcaption .t-rule{width:16px;height:1px;background:var(--gold-line);flex-shrink:0}
 .hero-testi figcaption .t-org{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 
-.hero-card{position:absolute;left:-38px;bottom:38px;background:#fff;border-radius:12px;box-shadow:var(--shadow-2);padding:18px 22px;display:flex;gap:14px;align-items:center;border:1px solid var(--border)}
+.hero-card{position:absolute;left:-38px;bottom:38px;background:var(--card);border-radius:12px;box-shadow:var(--shadow-2);padding:18px 22px;display:flex;gap:14px;align-items:center;border:1px solid var(--border)}
 .hero-card .dot{width:38px;height:38px;border-radius:50%;background:var(--royal-tint);display:grid;place-items:center;color:var(--royal);flex-shrink:0}
 .hero-card b{display:block;font-size:.92rem;color:var(--navy)}
 .hero-card small{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
@@ -199,9 +223,9 @@ header.hid{transform:translateY(-102%)}
 .why-photo{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-2);aspect-ratio:4/4.7}
 .why-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
 .why-visual:hover .why-photo img{transform:scale(1.04)}
-.why-quote{position:absolute;right:-30px;bottom:34px;max-width:300px;background:var(--navy);color:#fff;padding:24px 26px;border-radius:12px;box-shadow:var(--shadow-2)}
+.why-quote{position:absolute;right:-30px;bottom:34px;max-width:300px;background:var(--deep);color:#fff;padding:24px 26px;border-radius:12px;box-shadow:var(--shadow-2)}
 .why-quote p{font-family:var(--serif);font-size:1.02rem;line-height:1.5;font-style:italic;font-weight:400}
-.why-quote span{display:block;margin-top:12px;font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-line)}
+.why-quote span{display:block;margin-top:12px;font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-bright)}
 .why h2{margin-bottom:20px}
 .why .lede{margin-bottom:38px}
 .why-point{display:flex;gap:24px;padding:24px 0;border-top:1px solid var(--border)}
@@ -216,7 +240,7 @@ header.hid{transform:translateY(-102%)}
 .services-head{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end;margin-bottom:66px}
 .services-head .lede{justify-self:end}
 .pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
-.pkg{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:44px 38px;display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s var(--ease);position:relative}
+.pkg{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:44px 38px;display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s var(--ease);position:relative}
 .pkg:hover{transform:translateY(-6px);box-shadow:var(--shadow-2);border-color:var(--gold-line)}
 .pkg-num{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;color:var(--gold-2);margin-bottom:20px;display:flex;align-items:center;gap:12px;text-transform:uppercase}
 .pkg-num::after{content:"";flex:1;height:1px;background:var(--border)}
@@ -227,7 +251,7 @@ header.hid{transform:translateY(-102%)}
 .pkg li::before{content:"";position:absolute;left:0;top:.72em;width:12px;height:1px;background:var(--gold-2)}
 .pkg-includes{font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);margin-bottom:16px}
 .pkg-foot{margin-top:auto;padding-top:22px;border-top:1px solid var(--border);font-size:.9rem;color:var(--muted);font-style:italic;font-family:var(--serif)}
-.pkg-flagship{background:var(--navy);border-color:var(--navy);color:#E8EDF8}
+.pkg-flagship{background:var(--deep);border-color:var(--deep);color:#E8EDF8}
 .pkg-flagship:hover{border-color:rgba(217,184,124,.5)}
 .pkg-flagship h3{color:#fff}
 .pkg-flagship .pkg-tag{color:#AAB8D4}
@@ -239,12 +263,12 @@ header.hid{transform:translateY(-102%)}
 .pkg-badge{position:absolute;top:-13px;right:28px;background:var(--gold-2);color:#fff;font-family:var(--mono);font-size:.62rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:7px 14px;border-radius:var(--r-pill)}
 
 /* ---------- process ---------- */
-.process{background:linear-gradient(180deg,#101F45,var(--navy));color:#D7DFF0;position:relative;overflow:hidden}
+.process{background:linear-gradient(180deg,#3E5691,var(--deep));color:#D7DFF0;position:relative;overflow:hidden}
 .process::before{content:"";position:absolute;top:-320px;right:-320px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(41,73,167,.35),transparent 65%)}
 .process::after{content:"";position:absolute;bottom:-360px;left:-260px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(180,83,9,.12),transparent 62%)}
-.process .eyebrow{color:var(--gold-line)}
+.process .eyebrow{color:var(--gold-bright)}
 .process h2{color:#fff}
-.process h2 em{color:var(--gold-line)}
+.process h2 em{color:var(--gold-bright)}
 .process .lede{color:#9FB0CE}
 .process-head{max-width:640px;margin-bottom:80px;position:relative;z-index:1}
 .steps{position:relative;z-index:1;display:grid;grid-template-columns:repeat(7,1fr)}
@@ -253,7 +277,7 @@ header.hid{transform:translateY(-102%)}
 .step{padding:0 22px 0 0;position:relative}
 .step i{position:absolute;left:0;top:0;width:9px;height:9px;border-radius:50%;background:#31456F;transition:background .4s var(--ease),box-shadow .4s var(--ease)}
 .step.on i{background:var(--gold-line);box-shadow:0 0 0 5px rgba(217,184,124,.16)}
-.step-num{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;color:var(--gold-line);margin:34px 0 10px}
+.step-num{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;color:var(--gold-bright);margin:34px 0 10px}
 .step b{display:block;color:#fff;font-size:1rem;font-weight:600;margin-bottom:6px;line-height:1.35}
 .step p{font-size:.86rem;color:#8FA0C0;line-height:1.55}
 
@@ -264,10 +288,10 @@ header.hid{transform:translateY(-102%)}
 .edu-feats{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px;margin-bottom:40px}
 .edu-feat{position:relative;padding-left:24px;font-size:.95rem;color:#2c3444;font-weight:500}
 .edu-feat::before{content:"";position:absolute;left:0;top:.7em;width:12px;height:1px;background:var(--gold-2)}
-.lms{background:linear-gradient(150deg,#F2F5FB,#E9EEF8);border:1px solid var(--border);border-radius:var(--r);padding:34px;box-shadow:var(--shadow-2);position:relative}
-.lms-window{background:#fff;border-radius:12px;box-shadow:0 12px 40px rgba(14,30,66,.12);overflow:hidden;border:1px solid var(--border)}
-.lms-bar{display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid var(--border);background:#FBFCFE}
-.lms-bar i{width:9px;height:9px;border-radius:50%;background:#E3E8F0}
+.lms{background:linear-gradient(150deg,#F3EFE5,#E7E1D3);border:1px solid var(--border);border-radius:var(--r);padding:34px;box-shadow:var(--shadow-2);position:relative}
+.lms-window{background:var(--card);border-radius:12px;box-shadow:0 12px 40px rgba(14,30,66,.12);overflow:hidden;border:1px solid var(--border)}
+.lms-bar{display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid var(--border);background:#FDFBF6}
+.lms-bar i{width:9px;height:9px;border-radius:50%;background:#E4DED0}
 .lms-bar span{margin-left:10px;font-family:var(--mono);font-size:.66rem;color:var(--faint);font-weight:500;letter-spacing:.16em}
 .lms-body{padding:22px 24px;display:grid;gap:16px}
 .lms-row{display:flex;align-items:center;gap:14px}
@@ -275,10 +299,10 @@ header.hid{transform:translateY(-102%)}
 .lms-meta{flex:1}
 .lms-meta b{display:block;font-size:.86rem;color:var(--navy)}
 .lms-meta small{font-size:.74rem;color:var(--faint)}
-.lms-track{height:6px;border-radius:100px;background:#EDF0F6;overflow:hidden;margin-top:7px}
+.lms-track{height:6px;border-radius:100px;background:#E7E1D3;overflow:hidden;margin-top:7px}
 .lms-track i{display:block;height:100%;border-radius:100px;background:linear-gradient(90deg,var(--royal),var(--royal-2));width:0}
 .lms-pct{font-family:var(--serif);font-size:.95rem;color:var(--navy);min-width:44px;text-align:right}
-.lms-cert{position:absolute;right:-22px;bottom:-20px;background:#fff;border-radius:12px;box-shadow:var(--shadow-2);border:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;align-items:center}
+.lms-cert{position:absolute;right:-22px;bottom:-20px;background:var(--card);border-radius:12px;box-shadow:var(--shadow-2);border:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;align-items:center}
 .lms-cert .seal{width:40px;height:40px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#E7C989,var(--gold-2));display:grid;place-items:center;color:#fff}
 .lms-cert b{display:block;font-size:.85rem;color:var(--navy)}
 .lms-cert small{font-size:.75rem;color:var(--muted)}
@@ -289,23 +313,23 @@ header.hid{transform:translateY(-102%)}
 .ind-list{border-top:1px solid var(--border)}
 .ind-row{display:grid;grid-template-columns:70px 1.1fr 1.6fr auto;gap:30px;align-items:center;padding:28px 10px;border-bottom:1px solid var(--border);transition:background-color .4s var(--ease);position:relative}
 .ind-row>*{transition:transform .4s var(--ease)}
-.ind-row:hover{background:#fff}
+.ind-row:hover{background:var(--card)}
 .ind-row:hover>*{transform:translateX(14px)}
 .ind-idx{font-family:var(--mono);color:var(--gold-2);font-size:.72rem;letter-spacing:.1em}
 .ind-name{font-family:var(--serif);font-size:1.5rem;color:var(--navy)}
 .ind-desc{font-size:.93rem;color:var(--muted);line-height:1.55}
 .ind-arrow{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);display:grid;place-items:center;color:var(--faint);transition:transform .45s var(--ease),background-color .45s var(--ease),color .45s var(--ease),border-color .45s var(--ease)}
-.ind-row:hover .ind-arrow{transform:translateX(14px) rotate(-45deg);background:var(--navy);border-color:var(--navy);color:#fff}
+.ind-row:hover .ind-arrow{transform:translateX(14px) rotate(-45deg);background:var(--deep);border-color:var(--deep);color:#fff}
 
 /* ---------- band ---------- */
 .band{position:relative;padding:clamp(120px,15vw,170px) 0;overflow:hidden;color:#fff;text-align:center}
 .band-bg{position:absolute;inset:0}
 .band-bg img{width:100%;height:120%;object-fit:cover;object-position:center 30%}
-.band-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,30,66,.82),rgba(14,30,66,.6)),linear-gradient(100deg,rgba(14,30,66,.5),transparent 60%)}
+.band-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,42,68,.84),rgba(30,42,68,.62)),linear-gradient(100deg,rgba(30,42,68,.52),transparent 60%)}
 .band .wrap{position:relative;z-index:1}
 .band blockquote{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.35rem);line-height:1.35;max-width:840px;margin:0 auto 28px;font-weight:420}
 .band blockquote .w{opacity:1}
-.band cite{font-style:normal;font-family:var(--mono);font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-line)}
+.band cite{font-style:normal;font-family:var(--mono);font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-bright)}
 
 /* ---------- about ---------- */
 .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(48px,7.5vw,88px);align-items:center}
@@ -350,7 +374,7 @@ header.hid{transform:translateY(-102%)}
 .faq-q{width:100%;background:none;border:none;display:flex;justify-content:space-between;align-items:center;gap:24px;text-align:left;padding:27px 6px;font-family:var(--serif);font-size:1.18rem;color:var(--navy);transition:color .3s var(--ease)}
 .faq-q:hover{color:var(--royal)}
 .faq-q .fx{flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid var(--border);display:grid;place-items:center;transition:transform .45s var(--ease),background-color .45s var(--ease),border-color .45s var(--ease),color .45s var(--ease);color:var(--gold-2)}
-.faq-item.open .fx{transform:rotate(45deg);background:var(--navy);border-color:var(--navy);color:#fff}
+.faq-item.open .fx{transform:rotate(45deg);background:var(--deep);border-color:var(--deep);color:#fff}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
 .faq-a p{padding:0 60px 28px 6px;color:var(--muted);font-size:.98rem;line-height:1.7}
 
@@ -364,13 +388,13 @@ header.hid{transform:translateY(-102%)}
 .c-item b{display:block;font-family:var(--mono);font-size:.58rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
 .c-item a,.c-item span.val{font-size:1rem;color:var(--navy);font-weight:500}
 .c-item a:hover{color:var(--royal)}
-.form-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:clamp(30px,4vw,46px);box-shadow:var(--shadow-1)}
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:clamp(30px,4vw,46px);box-shadow:var(--shadow-1)}
 .form-card h3{margin-bottom:6px}
 .form-card>p{font-size:.92rem;color:var(--muted);margin-bottom:30px}
 .f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .f-group{margin-bottom:18px}
 .f-group label{display:block;font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
-.f-group input,.f-group select,.f-group textarea{width:100%;padding:13px 16px;border:1px solid var(--border);border-radius:var(--r-sm);font-family:inherit;font-size:.95rem;color:var(--ink);background:#FBFCFE;transition:border-color .3s var(--ease),box-shadow .3s var(--ease);-webkit-appearance:none;appearance:none}
+.f-group input,.f-group select,.f-group textarea{width:100%;padding:13px 16px;border:1px solid var(--border);border-radius:var(--r-sm);font-family:inherit;font-size:.95rem;color:var(--ink);background:#FDFBF6;transition:border-color .3s var(--ease),box-shadow .3s var(--ease);-webkit-appearance:none;appearance:none}
 .f-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235B6879' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
 .f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--royal);box-shadow:0 0 0 3px rgba(30,58,138,.1)}
 .f-group textarea{min-height:110px;resize:vertical}
@@ -378,13 +402,14 @@ header.hid{transform:translateY(-102%)}
 .form-ok{display:none;background:#F0FAF4;border:1px solid #BFE5CD;color:#166534;border-radius:var(--r-sm);padding:16px 20px;font-size:.93rem;margin-top:18px}
 
 /* ---------- footer ---------- */
-footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;position:relative;overflow:hidden}
+footer{background:var(--deep);color:#93A3C2;padding:0 0 42px;font-size:.92rem;position:relative;overflow:hidden}
 .fsig{position:relative;padding:clamp(90px,11vw,130px) 0 clamp(60px,7vw,90px);text-align:center}
 .fsig-mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(560px,80vw);opacity:.05;pointer-events:none}
 .fsig p{font-family:var(--serif);font-style:italic;font-size:clamp(1.9rem,4.6vw,3.6rem);color:#EDF1F9;font-weight:400;line-height:1.2;position:relative}
-.fsig p span{color:var(--gold-line)}
+.fsig p span{color:var(--gold-bright)}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:56px;margin-bottom:64px;position:relative}
-.foot-brand .logo-name{color:#fff}
+.foot-brand .logo-name{color:#F2EEE4}
+.foot-brand .logo-sub{color:rgba(242,238,228,.55)}
 .foot-brand p{margin-top:18px;line-height:1.7;font-size:.9rem;max-width:34ch}
 .foot-col b{display:block;color:#fff;font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;margin-bottom:22px}
 .foot-col ul{display:grid;gap:12px}
@@ -397,7 +422,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
 /* ---------- mobile sticky CTA ---------- */
 .mcta{display:none}
 @media(max-width:900px){
-  .mcta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--border);transform:translateY(110%);transition:transform .45s var(--ease)}
+  .mcta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(247,242,232,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--border);transform:translateY(110%);transition:transform .45s var(--ease)}
   .mcta.show{transform:translateY(0)}
   .mcta.hide{transform:translateY(110%)}
   .mcta .btn{width:100%;justify-content:center;padding:15px}
@@ -446,10 +471,10 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   .nav-cta .btn-primary{padding:11px 16px;font-size:.84rem;white-space:nowrap}
   .logo-name{font-size:1.2rem}
   .burger{display:block}
-  header{background:rgba(255,255,255,.86);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%)}
-  .mobile-menu{display:block;position:fixed;inset:0;background:#fff;z-index:55;padding:120px 36px;transform:translateX(100%);visibility:hidden;transition:transform .45s var(--ease),visibility 0s .45s}
+  header{background:rgba(247,242,232,.88);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%)}
+  .mobile-menu{display:block;position:fixed;inset:0;background:var(--bg);z-index:55;padding:120px 36px;transform:translateX(100%);visibility:hidden;transition:transform .45s var(--ease),visibility 0s .45s}
   .mobile-menu.open{transform:translateX(0);visibility:visible;transition:transform .45s var(--ease)}
-  .mobile-menu a{display:block;font-family:var(--serif);font-size:1.7rem;color:var(--navy);padding:15px 0;border-bottom:1px solid var(--border)}
+  .mobile-menu a{display:block;font-family:var(--serif);font-size:1.7rem;color:var(--ink);padding:15px 0;border-bottom:1px solid var(--border)}
   .mobile-menu .mm-meta{margin-top:28px;font-family:var(--mono);font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--faint)}
   .steps{grid-template-columns:1fr 1fr}
   .ind-row{grid-template-columns:44px 1fr auto;gap:16px}
@@ -472,23 +497,23 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
 <!-- intro veil -->
 <div class="veil" aria-hidden="true">
   <svg class="veil-bg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <path id="veilPath" d="M0 0 H100 V100 Q50 100 0 100 Z" fill="#0E1E42"></path>
+    <path id="veilPath" d="M0 0 H100 V100 Q50 100 0 100 Z" fill="#34497A"></path>
   </svg>
   <div class="veil-mark">
-    <svg viewBox="0 0 64 64" fill="none">
-      <path id="arc1" pathLength="100" d="M8 48 C 8 26, 56 26, 56 48" stroke="#F0EDE6" stroke-width="5" stroke-linecap="round"/>
-      <path id="arc2" pathLength="100" d="M20 48 C 20 36, 44 36, 44 48" stroke="#D9B87C" stroke-width="4" stroke-linecap="round"/>
-    </svg>
-    <div class="veil-word" id="veilWord">X CONSULTING</div>
-    <div class="veil-sub" id="veilSub">Workforce Consultancy</div>
+    <div class="veil-mono" id="veilMono">A&amp;D</div>
+    <div class="veil-word" id="veilWord">CONSULTING</div>
+    <div class="veil-sub" id="veilSub">International Workforce Consultancy</div>
   </div>
 </div>
 
 <header id="top">
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="X Consulting — home" data-cine>
-      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 48 C 8 26, 56 26, 56 48" fill="none" stroke="#1E3A8A" stroke-width="7" stroke-linecap="round"/><path d="M20 48 C 20 36, 44 36, 44 48" fill="none" stroke="#B45309" stroke-width="5" stroke-linecap="round"/></svg>
-      <span class="logo-name">X Consulting</span>
+    <a class="logo" href="#top" aria-label="A&amp;D Consulting — home" data-cine>
+      <span class="logo-mark" aria-hidden="true">A&amp;D</span>
+      <span class="logo-lockup">
+        <span class="logo-name">Consulting</span>
+        <span class="logo-sub">International Workforce Consultancy</span>
+      </span>
     </a>
     <nav class="nav-links" aria-label="Main">
       <a href="#services" data-cine data-sec="services">Services</a>
@@ -691,7 +716,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     </div>
     <div class="lms rv" aria-hidden="true">
       <div class="lms-window">
-        <div class="lms-bar"><i></i><i></i><i></i><span>X CONSULTING LEARNING — MY COURSES</span></div>
+        <div class="lms-bar"><i></i><i></i><i></i><span>A&amp;D LEARNING — MY COURSES</span></div>
         <div class="lms-body">
           <div class="lms-row">
             <div class="lms-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 7l9 5 9-5-9-5zM3 12l9 5 9-5M3 17l9 5 9-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -741,7 +766,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   <div class="band-bg curtain" aria-hidden="true"><img src="assets/waiter.jpg" alt="" loading="lazy" width="1600" height="1063"></div>
   <div class="wrap">
     <blockquote id="bandQuote">Every worker we place carries two things: the skills your business needs, and a language your team already shares.</blockquote>
-    <cite class="rv">The X Consulting difference</cite>
+    <cite class="rv">The A&amp;D difference</cite>
   </div>
 </section>
 
@@ -750,14 +775,14 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   <div class="wrap about-grid">
     <div class="about-visual rv">
       <div class="about-frame" aria-hidden="true"></div>
-      <div class="about-photo curtain"><img src="assets/founder-a.jpg" alt="Portrait of X Consulting's founder" loading="lazy"></div>
+      <div class="about-photo curtain"><img src="assets/founder-a.jpg" alt="Portrait of A&amp;D Consulting's founder" loading="lazy"></div>
     </div>
     <div class="about">
       <div class="eyebrow rv">About us</div>
       <h2 class="mh">Born in Mozambique. Built for <em>both sides</em> of the table.</h2>
-      <p class="rv" style="margin-top:24px">X Consulting was founded by a Mozambican professional who has spent years helping businesses in Portugal recruit and integrate Portuguese-speaking workers — and helping those workers build stable lives far from home.</p>
+      <p class="rv" style="margin-top:24px">A&amp;D Consulting was founded by a Mozambican professional who has spent years helping businesses in Portugal recruit and integrate Portuguese-speaking workers — and helping those workers build stable lives far from home.</p>
       <p class="rv">That double perspective is our advantage. <b>We understand what employers need:</b> reliability, clear communication and teams that stay. <b>And we understand what workers need:</b> honest guidance, fair treatment and a real chance to grow.</p>
-      <p class="rv">Today, X Consulting is a trusted advisor to companies across Portugal and Germany — building stable, productive, multicultural teams that last.</p>
+      <p class="rv">Today, A&amp;D Consulting is a trusted advisor to companies across Portugal and Germany — building stable, productive, multicultural teams that last.</p>
       <div class="about-sig rv">
         <span class="sig-line" aria-hidden="true"></span>
         <div><b>Founder &amp; Managing Director</b><small>Maputo · Lisboa · Frankfurt</small></div>
@@ -776,13 +801,13 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     </div>
     <div class="testi-grid">
       <article class="t-item rv">
-        <p class="t-quote">Working with X Consulting has been a fantastic experience. They have supplied us with a number of skilled construction workers across different trades, and we've been impressed not only by the quality of the recruitment but also by the integration and ongoing support they provide. Their team genuinely cares about long-term success, and we wouldn't hesitate to recommend them to others.</p>
+        <p class="t-quote">Working with A&amp;D Consulting has been a fantastic experience. They have supplied us with a number of skilled construction workers across different trades, and we've been impressed not only by the quality of the recruitment but also by the integration and ongoing support they provide. Their team genuinely cares about long-term success, and we wouldn't hesitate to recommend them to others.</p>
         <div class="t-attr">
           <span class="t-rule" aria-hidden="true"></span><b>Bethel &amp; Harvey Lda</b><span class="t-org">Construction</span>
         </div>
       </article>
       <article class="t-item rv">
-        <p class="t-quote">Due to the shortage of skilled labour in the areas we required, we engaged X Consulting to help source additional team members. We've been incredibly happy with the four builders they have recruited for us—their work ethic, attitude, and reliability have been outstanding, and they've become a real asset to our team. The recruitment process and ongoing support have been excellent, and we're looking forward to welcoming two more team members into our gardening and land care department very soon. We highly recommend their services.</p>
+        <p class="t-quote">Due to the shortage of skilled labour in the areas we required, we engaged A&amp;D Consulting to help source additional team members. We've been incredibly happy with the four builders they have recruited for us—their work ethic, attitude, and reliability have been outstanding, and they've become a real asset to our team. The recruitment process and ongoing support have been excellent, and we're looking forward to welcoming two more team members into our gardening and land care department very soon. We highly recommend their services.</p>
         <div class="t-attr">
           <span class="t-rule" aria-hidden="true"></span><b>EdenRise Lda</b><span class="t-org">Construction &amp; land care</span>
         </div>
@@ -909,18 +934,20 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="fsig">
-    <svg class="fsig-mark" id="fsigMark" viewBox="0 0 64 40" fill="none" aria-hidden="true">
-      <path d="M4 38 C 4 10, 60 10, 60 38" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
-      <path d="M16 38 C 16 22, 48 22, 48 38" stroke="#D9B87C" stroke-width="2" stroke-linecap="round"/>
+    <svg class="fsig-mark" id="fsigMark" viewBox="0 0 200 150" aria-hidden="true">
+      <text x="100" y="128" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="170" fill="#FFFFFF">&amp;</text>
     </svg>
     <div class="wrap"><p class="rv">From first interview, <span>to lasting team.</span></p></div>
   </div>
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="logo" href="#top" aria-label="X Consulting — back to top">
-          <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><path d="M8 48 C 8 26, 56 26, 56 48" fill="none" stroke="#7C9BEA" stroke-width="7" stroke-linecap="round"/><path d="M20 48 C 20 36, 44 36, 44 48" fill="none" stroke="#D9B87C" stroke-width="5" stroke-linecap="round"/></svg>
-          <span class="logo-name">X Consulting</span>
+        <a class="logo" href="#top" aria-label="A&amp;D Consulting — back to top">
+          <span class="logo-mark" aria-hidden="true">A&amp;D</span>
+          <span class="logo-lockup">
+            <span class="logo-name">Consulting</span>
+            <span class="logo-sub">International Workforce Consultancy</span>
+          </span>
         </a>
         <p>A workforce consultancy helping businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking professionals from Mozambique, Angola and other Lusophone countries.</p>
       </div>
@@ -955,7 +982,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 X Consulting</span>
+      <span>© 2026 A&amp;D Consulting</span>
       <span>Maputo · Lisboa · Frankfurt</span>
     </div>
   </div>
@@ -1087,7 +1114,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     if (unveiled) return; unveiled = true;
     try { sessionStorage.setItem("veiled", "1"); } catch(e){}
     var tl = gsap.timeline();
-    tl.to("#veilWord", {opacity:1, letterSpacing:".24em", textIndent:".24em", duration:.55, ease:"power2.out"}, .1)
+    tl.to("#veilWord", {opacity:1, letterSpacing:".2em", textIndent:".2em", duration:.55, ease:"power2.out"}, .1)
       .to("#veilSub", {opacity:1, duration:.4}, "-=.3")
       .to(".veil-mark", {opacity:0, y:-16, duration:.35, ease:"power2.in"}, "+=.2")
       .to("#veilPath", {attr:{d:"M0 0 H100 V55 Q50 -14 0 55 Z"}, duration:.5, ease:"power3.in"}, "-=.1")
@@ -1099,10 +1126,9 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     gsap.set(".veil", {display:"none"});
     heroIn();
   } else {
-    gsap.set(["#arc1","#arc2"], {strokeDasharray:100, strokeDashoffset:100});
     gsap.timeline()
-      .to("#arc1", {strokeDashoffset:0, duration:.55, ease:"power2.inOut"}, .05)
-      .to("#arc2", {strokeDashoffset:0, duration:.45, ease:"power2.inOut"}, .25)
+      .fromTo("#veilMono", {opacity:0, y:14, scale:.96},
+                           {opacity:1, y:0, scale:1, duration:.7, ease:"power3.out"}, .05)
       .add(unveil, "+=.05");
     setTimeout(unveil, 3000); // failsafe
   }
