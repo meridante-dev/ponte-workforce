@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ponte — Workforce Consultancy | Portuguese-Speaking Talent for Portugal &amp; Germany</title>
+<meta name="description" content="Ponte helps businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking workers from Mozambique, Angola and other Lusophone countries. Recruitment, cultural integration, employer consulting and workforce training in one consultancy.">
+<meta name="keywords" content="Portuguese-speaking workers, recruitment Portugal, recruitment Germany, Mozambique workers, Angola recruitment, workforce consultancy, international recruitment, employee integration, cultural integration, workforce training, employer support, skilled labour Portugal, skilled labour Germany">
+<meta property="og:title" content="Ponte — Workforce Consultancy">
+<meta property="og:description" content="Building stronger teams through skilled Portuguese-speaking talent. Recruitment, relocation, integration and workforce development for employers in Portugal and Germany.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/construction.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M8 48 C 8 26, 56 26, 56 48' fill='none' stroke='%231E3A8A' stroke-width='7' stroke-linecap='round'/><path d='M20 48 C 20 36, 44 36, 44 48' fill='none' stroke='%23B45309' stroke-width='5' stroke-linecap='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ponte Workforce Consultancy",
+  "description": "Consultancy helping businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking workers from Mozambique, Angola and other Lusophone countries.",
+  "areaServed": ["Portugal", "Germany"],
+  "knowsLanguage": ["pt", "en", "de"],
+  "serviceType": ["International recruitment", "Employee relocation", "Cultural integration", "Workforce training", "Employer consulting"],
+  "email": "hello@ponteworkforce.com",
+  "telephone": "+351 210 000 000",
+  "address": {"@type": "PostalAddress", "addressLocality": "Lisboa", "addressCountry": "PT"}
+}
+</script>
+<style>
+:root{
+  --navy:#0E1E42;          /* deep ink navy */
+  --royal:#1E3A8A;         /* royal blue */
+  --royal-2:#2949A7;       /* hover */
+  --royal-tint:#EEF2FB;    /* pale blue wash */
+  --gold:#A16207;          /* deep gold for text-safe accent */
+  --gold-2:#B45309;        /* bronze gold */
+  --gold-line:#D9B87C;     /* gold hairline */
+  --ink:#101828;
+  --muted:#5B6879;
+  --faint:#98A2B3;
+  --bg:#FFFFFF;
+  --bg-soft:#F7F9FC;
+  --border:#E6EAF1;
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Figtree",-apple-system,"Helvetica Neue",sans-serif;
+  --wrap:1180px;
+  --r:14px;
+  --shadow-1:0 1px 2px rgba(16,24,40,.04),0 8px 28px rgba(16,24,40,.06);
+  --shadow-2:0 2px 6px rgba(14,30,66,.06),0 24px 60px rgba(14,30,66,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer}
+::selection{background:var(--royal);color:#fff}
+
+/* ---------- typography ---------- */
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;color:var(--navy)}
+h1{font-size:clamp(2.5rem,5.2vw,4.15rem);line-height:1.08;font-weight:500}
+h2{font-size:clamp(1.9rem,3.4vw,2.7rem);line-height:1.15}
+h3{font-size:1.35rem;line-height:1.3}
+.eyebrow{font-family:var(--sans);font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold-line)}
+.lede{font-size:1.16rem;color:var(--muted);line-height:1.7;max-width:56ch}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+section{padding:120px 0}
+.center{text-align:center}
+.center .eyebrow{justify-content:center}
+.center .lede{margin-left:auto;margin-right:auto}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.98rem;padding:16px 30px;border-radius:10px;border:1px solid transparent;transition:all .22s ease;cursor:pointer}
+.btn svg{transition:transform .22s ease}
+.btn:hover svg{transform:translateX(4px)}
+.btn-primary{background:var(--royal);color:#fff}
+.btn-primary:hover{background:var(--royal-2);transform:translateY(-1px);box-shadow:0 10px 26px rgba(30,58,138,.28)}
+.btn-ghost{border-color:var(--border);color:var(--navy);background:#fff}
+.btn-ghost:hover{border-color:var(--royal);color:var(--royal)}
+.btn-light{background:#fff;color:var(--navy)}
+.btn-light:hover{transform:translateY(-1px);box-shadow:0 12px 30px rgba(0,0,0,.22)}
+
+/* ---------- nav ---------- */
+header{position:fixed;inset:0 0 auto 0;z-index:60;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-bottom-color:var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:34px;height:34px}
+.logo-name{font-family:var(--serif);font-size:1.42rem;font-weight:600;color:var(--navy);letter-spacing:.01em}
+.logo-name span{color:var(--gold-2)}
+.logo-sub{display:block;font-family:var(--sans);font-size:.6rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--faint);margin-top:1px}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:.95rem;font-weight:500;color:var(--ink);position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--gold-2);transition:width .25s ease}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:18px}
+.nav-cta .btn{padding:12px 22px;font-size:.9rem}
+.burger{display:none;background:none;border:none;width:40px;height:40px;position:relative;z-index:70}
+.burger span{display:block;width:22px;height:2px;background:var(--navy);margin:5px auto;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none}
+
+/* ---------- hero ---------- */
+.hero{padding:186px 0 96px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:center}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .word{display:inline-block}
+.hero em{font-style:italic;color:var(--royal)}
+.hero .lede{margin:28px 0 38px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero-note{margin-top:34px;display:flex;align-items:center;gap:12px;font-size:.88rem;color:var(--muted)}
+.hero-note .flags{font-size:1rem;letter-spacing:2px}
+.hero-visual{position:relative}
+.hero-photo{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-2);position:relative;aspect-ratio:4/4.6}
+.hero-photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.06)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,30,66,0) 55%,rgba(14,30,66,.38));pointer-events:none}
+.hero-frame{position:absolute;top:26px;left:-26px;right:26px;bottom:-26px;border:1px solid var(--gold-line);border-radius:var(--r);z-index:-1}
+.hero-card{position:absolute;left:-38px;bottom:38px;background:#fff;border-radius:12px;box-shadow:var(--shadow-2);padding:18px 22px;display:flex;gap:14px;align-items:center;border:1px solid var(--border)}
+.hero-card .dot{width:38px;height:38px;border-radius:50%;background:var(--royal-tint);display:grid;place-items:center;color:var(--royal);flex-shrink:0}
+.hero-card b{display:block;font-size:.92rem;color:var(--navy)}
+.hero-card small{font-size:.8rem;color:var(--muted)}
+
+/* ---------- stats ---------- */
+.stats{padding:64px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{text-align:center;padding:6px 20px;position:relative}
+.stat+.stat::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);height:58px;width:1px;background:linear-gradient(180deg,transparent,var(--gold-line),transparent)}
+.stat-num{font-family:var(--serif);font-size:clamp(2.4rem,3.6vw,3.2rem);font-weight:500;color:var(--navy);line-height:1}
+.stat-num sup{font-size:55%;color:var(--gold-2);top:-.6em}
+.stat-label{margin-top:10px;font-size:.9rem;color:var(--muted)}
+
+/* ---------- why ---------- */
+.why{background:var(--bg-soft)}
+.why-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:84px;align-items:center}
+.why-visual{position:relative}
+.why-photo{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-2);aspect-ratio:4/4.7}
+.why-photo img{width:100%;height:100%;object-fit:cover}
+.why-quote{position:absolute;right:-30px;bottom:34px;max-width:300px;background:var(--navy);color:#fff;padding:24px 26px;border-radius:12px;box-shadow:var(--shadow-2)}
+.why-quote p{font-family:var(--serif);font-size:1.02rem;line-height:1.5;font-style:italic}
+.why-quote span{display:block;margin-top:10px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-line)}
+.why h2{margin-bottom:20px}
+.why .lede{margin-bottom:38px}
+.why-points{display:grid;gap:0}
+.why-point{display:flex;gap:22px;padding:22px 0;border-top:1px solid var(--border)}
+.why-point:last-child{border-bottom:1px solid var(--border)}
+.why-icon{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:#fff;border:1px solid var(--border);display:grid;place-items:center;color:var(--royal)}
+.why-point b{display:block;font-size:1.02rem;color:var(--navy);margin-bottom:4px;font-weight:600}
+.why-point p{font-size:.95rem;color:var(--muted);line-height:1.6}
+
+/* ---------- services ---------- */
+.services-head{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end;margin-bottom:64px}
+.services-head .lede{justify-self:end}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+.pkg{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:42px 36px;display:flex;flex-direction:column;transition:transform .28s ease,box-shadow .28s ease;position:relative}
+.pkg:hover{transform:translateY(-6px);box-shadow:var(--shadow-2)}
+.pkg-num{font-family:var(--serif);font-size:.95rem;color:var(--gold-2);letter-spacing:.08em;margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.pkg-num::after{content:"";flex:1;height:1px;background:var(--border)}
+.pkg h3{margin-bottom:8px}
+.pkg-tag{font-size:.88rem;color:var(--muted);margin-bottom:26px;line-height:1.55}
+.pkg ul{display:grid;gap:11px;margin-bottom:30px}
+.pkg li{display:flex;gap:11px;font-size:.94rem;color:#2c3444;line-height:1.5}
+.pkg li svg{flex-shrink:0;margin-top:4px;color:var(--gold-2)}
+.pkg-includes{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:14px}
+.pkg-foot{margin-top:auto;padding-top:22px;border-top:1px solid var(--border);font-size:.9rem;color:var(--muted);font-style:italic;font-family:var(--serif)}
+.pkg-flagship{background:var(--navy);border-color:var(--navy);color:#E8EDF8}
+.pkg-flagship h3{color:#fff}
+.pkg-flagship .pkg-tag{color:#AAB8D4}
+.pkg-flagship li{color:#C9D4E8}
+.pkg-flagship .pkg-includes{color:#7C8DB0}
+.pkg-flagship .pkg-num::after{background:rgba(217,184,124,.3)}
+.pkg-flagship .pkg-foot{border-top-color:rgba(255,255,255,.14);color:#AAB8D4}
+.pkg-badge{position:absolute;top:-13px;right:28px;background:var(--gold-2);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:100px}
+
+/* ---------- process ---------- */
+.process{background:var(--navy);color:#D7DFF0;position:relative;overflow:hidden}
+.process::before{content:"";position:absolute;top:-320px;right:-320px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(41,73,167,.35),transparent 65%)}
+.process .eyebrow{color:var(--gold-line)}
+.process h2{color:#fff}
+.process .lede{color:#9FB0CE}
+.process-head{max-width:640px;margin-bottom:74px;position:relative;z-index:1}
+.steps{position:relative;z-index:1;display:grid;grid-template-columns:repeat(7,1fr);gap:0}
+.step{padding:0 22px 0 0;position:relative}
+.step-rail{height:1px;background:rgba(255,255,255,.16);position:relative;margin-bottom:28px;overflow:visible}
+.step-rail i{position:absolute;left:0;top:-4px;width:9px;height:9px;border-radius:50%;background:var(--gold-line);box-shadow:0 0 0 5px rgba(217,184,124,.15)}
+.step-num{font-family:var(--serif);font-size:1rem;color:var(--gold-line);margin-bottom:10px}
+.step b{display:block;color:#fff;font-size:1rem;font-weight:600;margin-bottom:6px;line-height:1.35}
+.step p{font-size:.86rem;color:#8FA0C0;line-height:1.55}
+
+/* ---------- education ---------- */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.edu h2{margin-bottom:20px}
+.edu .lede{margin-bottom:34px}
+.edu-feats{display:grid;grid-template-columns:1fr 1fr;gap:16px 30px;margin-bottom:38px}
+.edu-feat{display:flex;gap:12px;align-items:center;font-size:.95rem;color:#2c3444;font-weight:500}
+.edu-feat svg{color:var(--gold-2);flex-shrink:0}
+/* LMS mock */
+.lms{background:linear-gradient(150deg,#F2F5FB,#E9EEF8);border:1px solid var(--border);border-radius:18px;padding:34px;box-shadow:var(--shadow-2);position:relative}
+.lms-window{background:#fff;border-radius:12px;box-shadow:0 12px 40px rgba(14,30,66,.12);overflow:hidden;border:1px solid var(--border)}
+.lms-bar{display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid var(--border);background:#FBFCFE}
+.lms-bar i{width:9px;height:9px;border-radius:50%;background:#E3E8F0}
+.lms-bar span{margin-left:10px;font-size:.72rem;color:var(--faint);font-weight:600;letter-spacing:.06em}
+.lms-body{padding:22px 24px;display:grid;gap:16px}
+.lms-row{display:flex;align-items:center;gap:14px}
+.lms-ico{width:38px;height:38px;border-radius:10px;background:var(--royal-tint);display:grid;place-items:center;color:var(--royal);flex-shrink:0}
+.lms-meta{flex:1}
+.lms-meta b{display:block;font-size:.86rem;color:var(--navy)}
+.lms-meta small{font-size:.74rem;color:var(--faint)}
+.lms-track{height:6px;border-radius:100px;background:#EDF0F6;overflow:hidden;margin-top:7px}
+.lms-track i{display:block;height:100%;border-radius:100px;background:linear-gradient(90deg,var(--royal),var(--royal-2));width:0}
+.lms-pct{font-family:var(--serif);font-size:.95rem;color:var(--navy);min-width:44px;text-align:right}
+.lms-cert{position:absolute;right:-22px;bottom:-20px;background:#fff;border-radius:12px;box-shadow:var(--shadow-2);border:1px solid var(--border);padding:16px 20px;display:flex;gap:12px;align-items:center}
+.lms-cert .seal{width:40px;height:40px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#E7C989,var(--gold-2));display:grid;place-items:center;color:#fff}
+.lms-cert b{display:block;font-size:.85rem;color:var(--navy)}
+.lms-cert small{font-size:.75rem;color:var(--muted)}
+
+/* ---------- industries ---------- */
+.industries{background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:96px 0}
+.ind-head{margin-bottom:54px}
+.ind-list{border-top:1px solid var(--border)}
+.ind-row{display:grid;grid-template-columns:70px 1.1fr 1.6fr auto;gap:30px;align-items:center;padding:26px 10px;border-bottom:1px solid var(--border);transition:background .25s;position:relative}
+.ind-row:hover{background:#fff}
+.ind-idx{font-family:var(--serif);color:var(--gold-2);font-size:.95rem}
+.ind-name{font-family:var(--serif);font-size:1.5rem;color:var(--navy)}
+.ind-desc{font-size:.93rem;color:var(--muted);line-height:1.55}
+.ind-arrow{color:var(--faint);transition:transform .25s,color .25s}
+.ind-row:hover .ind-arrow{transform:translateX(6px);color:var(--gold-2)}
+
+/* ---------- band ---------- */
+.band{position:relative;padding:150px 0;overflow:hidden;color:#fff;text-align:center}
+.band-bg{position:absolute;inset:0}
+.band-bg img{width:100%;height:120%;object-fit:cover;object-position:center 30%}
+.band-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,30,66,.78),rgba(14,30,66,.62))}
+.band .wrap{position:relative;z-index:1}
+.band blockquote{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.3rem);line-height:1.35;max-width:820px;margin:0 auto 26px;font-weight:500}
+.band cite{font-style:normal;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-line)}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:88px;align-items:center}
+.about-visual{position:relative}
+.about-photo{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-2);aspect-ratio:4/4.9}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.about-frame{position:absolute;top:-24px;right:-24px;left:24px;bottom:24px;border:1px solid var(--gold-line);border-radius:var(--r);z-index:-1}
+.about h2{margin-bottom:24px}
+.about p{color:var(--muted);margin-bottom:18px;max-width:58ch}
+.about p b{color:var(--ink);font-weight:600}
+.about-sig{margin-top:30px;display:flex;align-items:center;gap:18px}
+.about-sig .sig-line{width:54px;height:1px;background:var(--gold-line)}
+.about-sig b{font-family:var(--serif);font-size:1.1rem;color:var(--navy);display:block}
+.about-sig small{color:var(--muted);font-size:.85rem}
+
+/* ---------- testimonials ---------- */
+.testi{background:var(--bg-soft)}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:60px}
+.t-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:44px 42px;position:relative;display:flex;flex-direction:column}
+.t-card::before{content:"“";font-family:var(--serif);font-size:5rem;line-height:0;color:var(--gold-line);position:absolute;top:44px;left:38px}
+.t-quote{font-family:var(--serif);font-size:1.22rem;line-height:1.55;color:var(--navy);margin:34px 0 30px;font-weight:400}
+.t-person{margin-top:auto;display:flex;gap:16px;align-items:center;border-top:1px solid var(--border);padding-top:24px}
+.t-avatar{width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0}
+.t-avatar img{width:100%;height:100%;object-fit:cover}
+.t-person b{display:block;font-size:.95rem;color:var(--navy)}
+.t-person small{font-size:.82rem;color:var(--muted)}
+.t-role{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);position:absolute;top:46px;right:42px}
+
+/* ---------- faq ---------- */
+.faq-wrap{max-width:820px;margin:64px auto 0}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;display:flex;justify-content:space-between;align-items:center;gap:24px;text-align:left;padding:26px 6px;font-family:var(--serif);font-size:1.18rem;color:var(--navy);transition:color .2s}
+.faq-q:hover{color:var(--royal)}
+.faq-q .fx{flex-shrink:0;width:30px;height:30px;border-radius:50%;border:1px solid var(--border);display:grid;place-items:center;transition:.3s;color:var(--gold-2)}
+.faq-item.open .fx{transform:rotate(45deg);background:var(--navy);border-color:var(--navy);color:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .38s ease}
+.faq-a p{padding:0 60px 26px 6px;color:var(--muted);font-size:.98rem;line-height:1.7}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.contact h2{margin-bottom:18px}
+.contact .lede{margin-bottom:40px}
+.c-items{display:grid;gap:8px}
+.c-item{display:flex;gap:18px;align-items:center;padding:16px 0;border-top:1px solid var(--border)}
+.c-item:last-child{border-bottom:1px solid var(--border)}
+.c-ico{width:44px;height:44px;border-radius:50%;background:var(--royal-tint);display:grid;place-items:center;color:var(--royal);flex-shrink:0}
+.c-item b{display:block;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.c-item a,.c-item span.val{font-size:1rem;color:var(--navy);font-weight:500}
+.c-item a:hover{color:var(--royal)}
+.form-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:46px;box-shadow:var(--shadow-1)}
+.form-card h3{margin-bottom:6px}
+.form-card>p{font-size:.92rem;color:var(--muted);margin-bottom:30px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:18px}
+.f-group label{display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:8px}
+.f-group input,.f-group select,.f-group textarea{width:100%;padding:13px 16px;border:1px solid var(--border);border-radius:9px;font-family:inherit;font-size:.95rem;color:var(--ink);background:#FBFCFE;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.f-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235B6879' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{outline:none;border-color:var(--royal);box-shadow:0 0 0 3px rgba(30,58,138,.1)}
+.f-group textarea{min-height:110px;resize:vertical}
+.form-note{font-size:.8rem;color:var(--faint);margin-top:16px}
+.form-ok{display:none;background:#F0FAF4;border:1px solid #BFE5CD;color:#166534;border-radius:10px;padding:16px 20px;font-size:.93rem;margin-top:18px}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy);color:#93A3C2;padding:84px 0 42px;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:56px;margin-bottom:64px}
+.foot-brand .logo-name{color:#fff}
+.foot-brand p{margin-top:18px;line-height:1.7;font-size:.9rem;max-width:34ch}
+.foot-col b{display:block;color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px}
+.foot-col ul{display:grid;gap:12px}
+.foot-col a{transition:color .2s}
+.foot-col a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:32px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.82rem;color:#6B7C9E}
+.foot-langs{display:flex;gap:14px}
+.foot-langs a:hover{color:#fff}
+
+/* ---------- reveal defaults (JS adds motion) ---------- */
+.rv{opacity:0;transform:translateY(28px)}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1060px){
+  .steps{grid-template-columns:repeat(4,1fr);gap:38px 0}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:900px){
+  section{padding:84px 0}
+  .hero{padding:140px 0 70px}
+  .hero-grid,.why-grid,.edu-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:56px}
+  .services-head{grid-template-columns:1fr;gap:20px}
+  .services-head .lede{justify-self:start}
+  .pkg-grid,.testi-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:34px 0}
+  .stat:nth-child(3)::before{display:none}
+  .hero-card{left:12px;bottom:20px}
+  .hero-frame{left:-12px;right:12px}
+  .why-quote{right:0;bottom:20px}
+  .nav-links,.nav-cta .btn-ghost{display:none}
+  .nav-cta .btn-primary{padding:11px 16px;font-size:.84rem;white-space:nowrap}
+  .burger{display:block}
+  .mobile-menu{display:block;position:fixed;inset:0;background:#fff;z-index:55;padding:120px 36px;transform:translateX(100%);transition:transform .35s cubic-bezier(.7,0,.3,1)}
+  .mobile-menu.open{transform:translateX(0)}
+  .mobile-menu a{display:block;font-family:var(--serif);font-size:1.7rem;color:var(--navy);padding:14px 0;border-bottom:1px solid var(--border)}
+  .steps{grid-template-columns:1fr 1fr}
+  .ind-row{grid-template-columns:44px 1fr auto;gap:16px}
+  .ind-desc{display:none}
+  .lms-cert{right:8px;bottom:-16px}
+  .form-card{padding:32px 26px}
+  .f-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Ponte Workforce Consultancy — home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 48 C 8 26, 56 26, 56 48" fill="none" stroke="#1E3A8A" stroke-width="7" stroke-linecap="round"/><path d="M20 48 C 20 36, 44 36, 44 48" fill="none" stroke="#B45309" stroke-width="5" stroke-linecap="round"/></svg>
+      <span>
+        <span class="logo-name">Ponte<span>.</span></span>
+        <span class="logo-sub">Workforce Consultancy</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">Our Process</a>
+      <a href="#education">Education Platform</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="#contact">Contact</a>
+      <a class="btn btn-primary" href="#contact">Book a Consultation</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">Services</a>
+  <a href="#process">Our Process</a>
+  <a href="#education">Education Platform</a>
+  <a href="#about">About</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow rv">Portugal · Germany · Lusophone Africa</div>
+      <h1 id="heroTitle">Building stronger teams through skilled <em>Portuguese-speaking</em> talent.</h1>
+      <p class="lede rv">We help businesses recruit, relocate, integrate and develop reliable professionals from Mozambique, Angola and other Portuguese-speaking countries.</p>
+      <div class="hero-ctas rv">
+        <a class="btn btn-primary" href="#contact">Book a Consultation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost" href="#services">Explore Our Services</a>
+      </div>
+      <div class="hero-note rv">
+        <span class="flags" aria-hidden="true">🇲🇿 🇦🇴 🇵🇹 🇩🇪</span>
+        <span>One language. One team. From first interview to long-term employee.</span>
+      </div>
+    </div>
+    <div class="hero-visual rv">
+      <div class="hero-frame" aria-hidden="true"></div>
+      <div class="hero-photo"><img id="heroImg" src="assets/construction.jpg" alt="A construction team reviewing a project on site" fetchpriority="high"></div>
+      <div class="hero-card">
+        <div class="dot"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><b>Workers placed &amp; retained</b><small>Recruitment · Relocation · Integration</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<div class="stats" aria-label="Key figures">
+  <div class="wrap stats-grid">
+    <div class="stat rv"><div class="stat-num"><span class="count" data-to="12">0</span><sup>+</sup></div><div class="stat-label">Years of workforce experience</div></div>
+    <div class="stat rv"><div class="stat-num"><span class="count" data-to="400">0</span><sup>+</sup></div><div class="stat-label">Workers successfully placed</div></div>
+    <div class="stat rv"><div class="stat-num"><span class="count" data-to="94">0</span><sup>%</sup></div><div class="stat-label">Retention after the first year</div></div>
+    <div class="stat rv"><div class="stat-num"><span class="count" data-to="2">0</span></div><div class="stat-label">Countries served — Portugal &amp; Germany</div></div>
+  </div>
+</div>
+
+<!-- ============ WHY ============ -->
+<section class="why" id="why">
+  <div class="wrap why-grid">
+    <div class="why-visual rv">
+      <div class="why-photo"><img src="assets/agriculture.jpg" alt="Workers meeting in a golden wheat field at harvest time" loading="lazy"></div>
+      <div class="why-quote">
+        <p>Finding workers is only the beginning.</p>
+        <span>Our founding principle</span>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow rv">Why businesses choose us</div>
+      <h2 class="rv">We don't simply recruit workers. We build successful long-term teams.</h2>
+      <p class="lede rv">Successful employment depends on far more than a signed contract — documentation, cultural integration, communication, leadership and ongoing development all decide whether a placement lasts. That's where we help.</p>
+      <div class="why-points">
+        <div class="why-point rv">
+          <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-6 4h6M9 8h1m4 0h1M5 3h14a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <div><b>Documentation, handled properly</b><p>Visas, contracts and legal requirements managed with care — in Portugal and in Germany.</p></div>
+        </div>
+        <div class="why-point rv">
+          <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2m18 0v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75M13 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b>Cultural integration that lasts</b><p>We prepare both the worker and the employer, so new team members settle in and stay.</p></div>
+        </div>
+        <div class="why-point rv">
+          <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b>One language, no barriers</b><p>We speak Portuguese with your workers and plain business language with you.</p></div>
+        </div>
+        <div class="why-point rv">
+          <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 20V10M18 20V4M6 20v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <div><b>Development, not just placement</b><p>Structured training keeps employees growing — and keeps your teams performing.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="services-head">
+      <div>
+        <div class="eyebrow rv">Services</div>
+        <h2 class="rv">Three packages. One complete solution.</h2>
+      </div>
+      <p class="lede rv">Start with recruitment, or partner with us for the full journey — from first interview to a fully developed, long-term employee.</p>
+    </div>
+    <div class="pkg-grid">
+      <article class="pkg rv">
+        <div class="pkg-num">Package 01</div>
+        <h3>Recruitment &amp; Relocation</h3>
+        <p class="pkg-tag">Perfect for businesses that need dependable recruitment support only.</p>
+        <div class="pkg-includes">Includes</div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Worker sourcing &amp; candidate screening</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Documentation assistance</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Visa guidance</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Travel coordination</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Arrival support &amp; initial settlement</li>
+        </ul>
+        <div class="pkg-foot">The essential foundation.</div>
+      </article>
+      <article class="pkg rv">
+        <div class="pkg-num">Package 02</div>
+        <h3>Integration &amp; Workforce Consultancy</h3>
+        <p class="pkg-tag">Ideal for businesses that want ongoing support after recruitment.</p>
+        <div class="pkg-includes">Everything in Package 01, plus</div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Employer consulting &amp; management support</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Cultural guidance &amp; communication coaching</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Regular business check-ins</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Problem solving &amp; conflict prevention</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Retention strategies &amp; team development advice</li>
+        </ul>
+        <div class="pkg-foot">Support that continues after day one.</div>
+      </article>
+      <article class="pkg pkg-flagship rv">
+        <div class="pkg-badge">Complete</div>
+        <div class="pkg-num">Package 03</div>
+        <h3>Complete Workforce Development</h3>
+        <p class="pkg-tag">Designed to create exceptional long-term employees.</p>
+        <div class="pkg-includes">Everything in Packages 01 &amp; 02, plus</div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Online Learning Management System</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Legally compliant training — including Portugal's required training hours</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Health &amp; safety, professional standards, customer service</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Communication, teamwork &amp; personal responsibility</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Leadership foundations &amp; continuous improvement</li>
+        </ul>
+        <div class="pkg-foot">Training developed by experts in leadership, behavioural psychology and high-performance coaching.</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="process-head">
+      <div class="eyebrow rv">Our process</div>
+      <h2 class="rv">A clear path, from your workforce needs to a thriving team.</h2>
+      <p class="lede rv">Seven steps. One accountable partner at every stage.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="step-rail"><i></i></div><div class="step-num">01</div><b>Understand</b><p>We map your workforce needs together.</p></div>
+      <div class="step rv"><div class="step-rail"><i></i></div><div class="step-num">02</div><b>Source</b><p>Qualified candidates, carefully screened.</p></div>
+      <div class="step rv"><div class="step-rail"><i></i></div><div class="step-num">03</div><b>Documentation</b><p>Visas, contracts and relocation handled.</p></div>
+      <div class="step rv"><div class="step-rail"><i></i></div><div class="step-num">04</div><b>Arrival</b><p>Onboarding and settlement from day one.</p></div>
+      <div class="step rv"><div class="step-rail"><i></i></div><div class="step-num">05</div><b>Integration</b><p>Cultural guidance for worker and employer.</p></div>
+      <div class="step rv"><div class="step-rail"><i></i></div><div class="step-num">06</div><b>Support</b><p>Regular check-ins and problem solving.</p></div>
+      <div class="step rv"><div class="step-rail"><i></i></div><div class="step-num">07</div><b>Development</b><p>Continuous growth on our education platform.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education">
+  <div class="wrap edu-grid">
+    <div class="edu">
+      <div class="eyebrow rv">Education platform</div>
+      <h2 class="rv">Your team keeps learning. Your business keeps improving.</h2>
+      <p class="lede rv">Businesses on our platform continuously develop their employees through structured online learning — legally compliant, professionally designed and simple to access on any phone.</p>
+      <div class="edu-feats">
+        <div class="edu-feat rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Progress tracking</div>
+        <div class="edu-feat rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Certificates</div>
+        <div class="edu-feat rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Compliance training</div>
+        <div class="edu-feat rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Leadership development</div>
+        <div class="edu-feat rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Communication</div>
+        <div class="edu-feat rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Workplace excellence</div>
+        <div class="edu-feat rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Continuous learning</div>
+        <div class="edu-feat rv"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Simple mobile access</div>
+      </div>
+      <a class="btn btn-primary rv" href="#contact">Ask about the platform
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="lms rv" aria-hidden="true">
+      <div class="lms-window">
+        <div class="lms-bar"><i></i><i></i><i></i><span>PONTE LEARNING — MY COURSES</span></div>
+        <div class="lms-body">
+          <div class="lms-row">
+            <div class="lms-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 7l9 5 9-5-9-5zM3 12l9 5 9-5M3 17l9 5 9-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="lms-meta"><b>Health &amp; Safety Essentials</b><small>Module 6 of 8 · Portugal compliance</small><div class="lms-track"><i data-w="82%"></i></div></div>
+            <div class="lms-pct">82%</div>
+          </div>
+          <div class="lms-row">
+            <div class="lms-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="lms-meta"><b>Workplace Communication</b><small>Module 4 of 6 · Certificate course</small><div class="lms-track"><i data-w="64%"></i></div></div>
+            <div class="lms-pct">64%</div>
+          </div>
+          <div class="lms-row">
+            <div class="lms-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 20V10M18 20V4M6 20v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="lms-meta"><b>Leadership Foundations</b><small>Module 2 of 10 · Team leads</small><div class="lms-track"><i data-w="23%"></i></div></div>
+            <div class="lms-pct">23%</div>
+          </div>
+        </div>
+      </div>
+      <div class="lms-cert">
+        <div class="seal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm0 0v7l3-2 3 2v-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><b>Certificate earned</b><small>Professional Standards · Level 1</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section class="industries" id="industries">
+  <div class="wrap">
+    <div class="ind-head">
+      <div class="eyebrow rv">Industries we serve</div>
+      <h2 class="rv">Wherever reliable hands are hard to find.</h2>
+    </div>
+    <div class="ind-list">
+      <a class="ind-row rv" href="#contact"><span class="ind-idx">01</span><span class="ind-name">Construction</span><span class="ind-desc">Skilled trades and site crews for a sector under constant labour pressure.</span><span class="ind-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="ind-row rv" href="#contact"><span class="ind-idx">02</span><span class="ind-name">Hospitality</span><span class="ind-desc">Service teams for hotels and restaurants — trained in standards that guests notice.</span><span class="ind-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="ind-row rv" href="#contact"><span class="ind-idx">03</span><span class="ind-name">Agriculture</span><span class="ind-desc">Seasonal and permanent workers for farms, vineyards and greenhouses.</span><span class="ind-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="ind-row rv" href="#contact"><span class="ind-idx">04</span><span class="ind-name">Cleaning &amp; Facilities</span><span class="ind-desc">Dependable teams for companies where consistency is the product.</span><span class="ind-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="ind-row rv" href="#contact"><span class="ind-idx">05</span><span class="ind-name">Manufacturing</span><span class="ind-desc">Production workers who show up, learn fast and stay.</span><span class="ind-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="ind-row rv" href="#contact"><span class="ind-idx">06</span><span class="ind-name">Logistics</span><span class="ind-desc">Warehouse and distribution staff for supply chains that can't slow down.</span><span class="ind-arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE BAND ============ -->
+<section class="band" id="band">
+  <div class="band-bg" aria-hidden="true"><img src="assets/waiter.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <blockquote class="rv">Every worker we place carries two things: the skills your business needs, and a language your team already shares.</blockquote>
+    <cite class="rv">The Ponte difference</cite>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual rv">
+      <div class="about-frame" aria-hidden="true"></div>
+      <div class="about-photo"><img src="assets/founder-a.jpg" alt="Portrait of Ponte's founder" loading="lazy"></div>
+    </div>
+    <div class="about">
+      <div class="eyebrow rv">About us</div>
+      <h2 class="rv">Born in Mozambique. Built for both sides of the table.</h2>
+      <p class="rv">Ponte was founded by a Mozambican professional who has spent years helping businesses in Portugal recruit and integrate Portuguese-speaking workers — and helping those workers build stable lives far from home.</p>
+      <p class="rv">That double perspective is our advantage. <b>We understand what employers need:</b> reliability, clear communication and teams that stay. <b>And we understand what workers need:</b> honest guidance, fair treatment and a real chance to grow.</p>
+      <p class="rv">Today, Ponte is a trusted advisor to companies across Portugal and Germany — building stable, productive, multicultural teams that last.</p>
+      <div class="about-sig rv">
+        <span class="sig-line" aria-hidden="true"></span>
+        <div><b>Founder &amp; Managing Director</b><small>Maputo · Lisboa · Frankfurt</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testi">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv">Trusted by employers — and by workers</div>
+      <h2 class="rv">Two sides. One partnership.</h2>
+    </div>
+    <div class="testi-grid">
+      <article class="t-card rv">
+        <span class="t-role">Employer</span>
+        <p class="t-quote">We had tried three agencies before Ponte. The difference was everything after arrival — the check-ins, the coaching, the way problems were solved before they grew. Two years later, the whole team is still with us.</p>
+        <div class="t-person">
+          <div class="t-avatar"><img src="assets/meeting-a.jpg" alt="" loading="lazy"></div>
+          <div><b>Operations Director</b><small>Hospitality group · Algarve, Portugal</small></div>
+        </div>
+      </article>
+      <article class="t-card rv">
+        <span class="t-role">Worker</span>
+        <p class="t-quote">Ponte prepared me for everything — the documents, the flight, my first week. And they didn't disappear afterwards. I finished my training certificate last month. My manager noticed.</p>
+        <div class="t-person">
+          <div class="t-avatar"><img src="assets/worker-b.jpg" alt="" loading="lazy"></div>
+          <div><b>Skilled Tradesman</b><small>From Maputo · working in Lisbon</small></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow rv">Frequently asked questions</div>
+      <h2 class="rv">Clear answers, before you ask.</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">Which countries do you recruit from?<span class="fx"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><p>Primarily Mozambique and Angola, with access to qualified candidates across other Portuguese-speaking countries, including Cabo Verde, Guinea-Bissau and São Tomé and Príncipe.</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">What industries do you support?<span class="fx"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><p>Construction, hospitality, agriculture, cleaning and facilities, manufacturing and logistics — any business experiencing labour shortages where reliability matters.</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">How long does recruitment take?<span class="fx"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><p>It depends on the role and the destination country's visa timelines. After our first consultation we give you a realistic schedule — and we keep you informed at every stage, so there are no surprises.</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">Can you help with visas?<span class="fx"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><p>Yes. Visa guidance and documentation assistance are part of every package, for both Portugal and Germany. We prepare the paperwork properly the first time, which is the single biggest factor in a smooth timeline.</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">Do you support employers after arrival?<span class="fx"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><p>This is exactly where we're different. Packages 02 and 03 include ongoing employer consulting, cultural guidance, communication coaching, regular check-ins and retention strategies — long after the first day of work.</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">Can employees receive ongoing training?<span class="fx"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><p>Yes. Our online education platform delivers structured, certificate-based training — including legally required training hours in Portugal — covering health &amp; safety, communication, customer service, teamwork and leadership foundations.</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">Can the education platform be customised?<span class="fx"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button>
+        <div class="faq-a"><p>Yes. We can adapt training paths to your industry, your standards and your internal procedures — so employees learn the way your business actually works.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="background:var(--bg-soft)">
+  <div class="wrap contact-grid">
+    <div class="contact">
+      <div class="eyebrow rv">Contact</div>
+      <h2 class="rv">Let's talk about your team.</h2>
+      <p class="lede rv">Tell us about your workforce needs. We'll come back within one business day with clear, honest next steps.</p>
+      <div class="c-items">
+        <div class="c-item rv">
+          <div class="c-ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b>Phone</b><a href="tel:+351210000000">+351 210 000 000</a></div>
+        </div>
+        <div class="c-item rv">
+          <div class="c-ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b>WhatsApp</b><a href="https://wa.me/351910000000" rel="noopener">+351 910 000 000</a></div>
+        </div>
+        <div class="c-item rv">
+          <div class="c-ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6"/><path d="m22 6-10 7L2 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><b>Email</b><a href="mailto:hello@ponteworkforce.com">hello@ponteworkforce.com</a></div>
+        </div>
+        <div class="c-item rv">
+          <div class="c-ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.6"/></svg></div>
+          <div><b>Location</b><span class="val">Lisboa, Portugal · serving Portugal &amp; Germany</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-card rv">
+      <h3>Book a consultation</h3>
+      <p>No obligation. A 30-minute conversation about your workforce needs.</p>
+      <form id="contactForm" novalidate>
+        <div class="f-row">
+          <div class="f-group"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="f-group"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization" required></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="f-group"><label for="f-phone">Phone (optional)</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="f-row">
+          <div class="f-group"><label for="f-industry">Industry</label>
+            <select id="f-industry" name="industry">
+              <option>Construction</option><option>Hospitality</option><option>Agriculture</option><option>Cleaning &amp; Facilities</option><option>Manufacturing</option><option>Logistics</option><option>Other</option>
+            </select></div>
+          <div class="f-group"><label for="f-country">Where are you hiring?</label>
+            <select id="f-country" name="country"><option>Portugal</option><option>Germany</option><option>Both</option></select></div>
+        </div>
+        <div class="f-group"><label for="f-msg">Tell us about your workforce needs</label><textarea id="f-msg" name="message" placeholder="e.g. We need six experienced workers for our sites near Faro, starting in autumn."></textarea></div>
+        <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Book a Consultation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="form-ok" id="formOk">Thank you — your request has been received. We'll reply within one business day.</div>
+        <p class="form-note">Your details are used only to respond to your enquiry. No newsletters, no sharing.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#top" aria-label="Ponte — back to top">
+          <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><path d="M8 48 C 8 26, 56 26, 56 48" fill="none" stroke="#7C9BEA" stroke-width="7" stroke-linecap="round"/><path d="M20 48 C 20 36, 44 36, 44 48" fill="none" stroke="#D9B87C" stroke-width="5" stroke-linecap="round"/></svg>
+          <span><span class="logo-name">Ponte<span style="color:#D9B87C">.</span></span></span>
+        </a>
+        <p>A workforce consultancy helping businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking professionals from Mozambique, Angola and other Lusophone countries.</p>
+      </div>
+      <div class="foot-col">
+        <b>Company</b>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#education">Education Platform</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <b>Industries</b>
+        <ul>
+          <li><a href="#industries">Construction</a></li>
+          <li><a href="#industries">Hospitality</a></li>
+          <li><a href="#industries">Agriculture</a></li>
+          <li><a href="#industries">Manufacturing</a></li>
+          <li><a href="#industries">Logistics</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <b>Contact</b>
+        <ul>
+          <li><a href="mailto:hello@ponteworkforce.com">hello@ponteworkforce.com</a></li>
+          <li><a href="tel:+351210000000">+351 210 000 000</a></li>
+          <li><a href="https://wa.me/351910000000" rel="noopener">WhatsApp</a></li>
+          <li>Lisboa, Portugal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Ponte Workforce Consultancy. All rights reserved.</span>
+      <div class="foot-langs" aria-label="Languages"><a href="#">EN</a><a href="#">PT</a><a href="#">DE</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  "use strict";
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+             || new URLSearchParams(location.search).has("static");
+
+  /* nav scrolled state */
+  var header = document.querySelector("header");
+  addEventListener("scroll", function(){ header.classList.toggle("scrolled", scrollY > 10); }, {passive:true});
+
+  /* mobile menu */
+  var burger = document.querySelector(".burger"), menu = document.getElementById("mobileMenu");
+  burger.addEventListener("click", function(){
+    var open = menu.classList.toggle("open");
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open);
+    document.body.style.overflow = open ? "hidden" : "";
+  });
+  menu.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){
+    menu.classList.remove("open"); burger.classList.remove("open"); document.body.style.overflow = "";
+  });});
+
+  /* FAQ accordion */
+  document.querySelectorAll(".faq-item").forEach(function(item){
+    var q = item.querySelector(".faq-q"), a = item.querySelector(".faq-a");
+    q.addEventListener("click", function(){
+      var isOpen = item.classList.contains("open");
+      document.querySelectorAll(".faq-item.open").forEach(function(o){
+        o.classList.remove("open"); o.querySelector(".faq-a").style.maxHeight = null;
+        o.querySelector(".faq-q").setAttribute("aria-expanded","false");
+      });
+      if(!isOpen){ item.classList.add("open"); a.style.maxHeight = a.scrollHeight + "px"; q.setAttribute("aria-expanded","true"); }
+    });
+  });
+
+  /* form (demo handler — wire to a form backend before launch) */
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var f = e.target;
+    if(!f.querySelector("#f-name").value || !f.querySelector("#f-email").value){
+      f.querySelector("#f-name").reportValidity(); return;
+    }
+    document.getElementById("formOk").style.display = "block";
+    f.querySelector("button[type=submit]").disabled = true;
+  });
+
+  if (reduced) document.documentElement.style.scrollBehavior = "auto";
+  if (reduced || typeof gsap === "undefined"){
+    document.querySelectorAll(".rv").forEach(function(el){ el.style.opacity = 1; el.style.transform = "none"; });
+    document.querySelectorAll(".lms-track i").forEach(function(b){ b.style.width = b.dataset.w; });
+    document.querySelectorAll(".count").forEach(function(c){ c.textContent = c.dataset.to; });
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* hero headline: word-by-word rise */
+  var title = document.getElementById("heroTitle");
+  var words = title.innerHTML.split(/\s+/);
+  title.innerHTML = words.map(function(w){ return '<span class="word" style="display:inline-block">' + w + "</span> "; }).join("");
+  gsap.set(title.querySelectorAll(".word"), {yPercent: 110, opacity: 0});
+  gsap.to(title.querySelectorAll(".word"), {yPercent: 0, opacity: 1, duration: .9, stagger: .05, ease: "power3.out", delay: .15});
+
+  /* generic reveals */
+  document.querySelectorAll(".rv").forEach(function(el){
+    gsap.to(el, {opacity: 1, y: 0, duration: .85, ease: "power2.out",
+      scrollTrigger: {trigger: el, start: "top 88%", once: true}});
+  });
+
+  /* hero image: slow settle + gentle parallax */
+  var heroImg = document.getElementById("heroImg");
+  gsap.to(heroImg, {scale: 1, duration: 1.6, ease: "power2.out", delay: .2});
+  gsap.to(heroImg, {yPercent: 6, ease: "none",
+    scrollTrigger: {trigger: ".hero", start: "top top", end: "bottom top", scrub: true}});
+
+  /* band image parallax */
+  gsap.fromTo(".band-bg img", {yPercent: -8}, {yPercent: 4, ease: "none",
+    scrollTrigger: {trigger: ".band", start: "top bottom", end: "bottom top", scrub: true}});
+
+  /* stat count-up */
+  document.querySelectorAll(".count").forEach(function(c){
+    var to = +c.dataset.to, obj = {v: 0};
+    gsap.to(obj, {v: to, duration: 1.6, ease: "power1.out",
+      scrollTrigger: {trigger: c, start: "top 90%", once: true},
+      onUpdate: function(){ c.textContent = Math.round(obj.v); }});
+  });
+
+  /* process rail dots draw across */
+  gsap.utils.toArray(".step").forEach(function(step, i){
+    var rail = step.querySelector(".step-rail");
+    gsap.from(rail, {scaleX: 0, transformOrigin: "left center", duration: .8, delay: i * .1, ease: "power2.out",
+      scrollTrigger: {trigger: ".steps", start: "top 80%", once: true}});
+  });
+
+  /* LMS progress bars */
+  document.querySelectorAll(".lms-track i").forEach(function(bar, i){
+    gsap.to(bar, {width: bar.dataset.w, duration: 1.2, delay: .15 * i, ease: "power2.out",
+      scrollTrigger: {trigger: ".lms", start: "top 78%", once: true}});
+  });
+
+  /* subtle cursor-follow tilt on LMS mock (desktop only) */
+  gsap.matchMedia().add("(min-width: 900px) and (prefers-reduced-motion: no-preference)", function(){
+    var lms = document.querySelector(".lms");
+    var rx = gsap.quickTo(lms, "rotationY", {duration: .6, ease: "power3"});
+    var ry = gsap.quickTo(lms, "rotationX", {duration: .6, ease: "power3"});
+    gsap.set(lms, {transformPerspective: 900});
+    lms.addEventListener("mousemove", function(e){
+      var r = lms.getBoundingClientRect();
+      rx(((e.clientX - r.left) / r.width - .5) * 5);
+      ry(-((e.clientY - r.top) / r.height - .5) * 4);
+    });
+    lms.addEventListener("mouseleave", function(){ rx(0); ry(0); });
+  });
+})();
+</script>
+</body>
+</html>
