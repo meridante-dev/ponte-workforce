@@ -312,21 +312,27 @@ header.hid{transform:translateY(-102%)}
 .about-sig b{font-family:var(--serif);font-size:1.1rem;color:var(--navy);display:block;font-weight:500}
 .about-sig small{font-family:var(--mono);color:var(--muted);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}
 
-/* ---------- testimonials ---------- */
-.testi{background:var(--bg-soft);position:relative;overflow:hidden}
+/* ---------- testimonials (compact band) ---------- */
+.testi{background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:clamp(64px,8vw,96px) 0;position:relative;overflow:hidden}
 .testi::before{content:"";position:absolute;right:-18vw;top:-24vh;width:54vw;height:54vw;border-radius:50%;background:radial-gradient(circle,rgba(180,83,9,.05),transparent 62%)}
 .testi .wrap{position:relative}
-.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:60px}
-.t-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:46px 44px;position:relative;display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s var(--ease)}
-.t-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-2);border-color:var(--gold-line)}
-.t-card::before{content:"“";font-family:var(--serif);font-size:5rem;line-height:0;color:var(--gold-line);position:absolute;top:46px;left:40px}
-.t-quote{font-family:var(--serif);font-size:1.22rem;line-height:1.55;color:var(--navy);margin:36px 0 30px;font-weight:400}
-.t-person{margin-top:auto;display:flex;gap:16px;align-items:center;border-top:1px solid var(--border);padding-top:24px}
-.t-avatar{width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0}
-.t-avatar img{width:100%;height:100%;object-fit:cover}
-.t-person b{display:block;font-size:.95rem;color:var(--navy)}
-.t-person small{font-size:.82rem;color:var(--muted)}
-.t-role{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);position:absolute;top:50px;right:44px}
+.testi-head{display:flex;align-items:baseline;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:clamp(36px,4vw,52px)}
+.testi-head h2{font-size:clamp(1.5rem,2.3vw,1.95rem)}
+.testi-head .testi-meta{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr}
+.t-item{padding:0 clamp(26px,3.4vw,48px);position:relative}
+.t-item:first-child{padding-left:0}
+.t-item:last-child{padding-right:0}
+.t-item+.t-item::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:1px;background:linear-gradient(180deg,transparent,var(--gold-line),transparent)}
+.t-quote{font-family:var(--serif);font-size:1.06rem;line-height:1.62;color:var(--navy);font-weight:400}
+.t-quote::before{content:"“";color:var(--gold-line);margin-right:1px}
+.t-quote::after{content:"”";color:var(--gold-line)}
+.t-attr{margin-top:20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.t-attr b{font-size:.9rem;color:var(--navy);font-weight:600}
+.t-attr .t-rule{width:18px;height:1px;background:var(--gold-line);flex-shrink:0}
+.t-attr .t-org{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.t-pending .t-quote{color:var(--faint);font-style:italic}
+.t-pending .t-quote::before,.t-pending .t-quote::after{content:none}
 
 /* ---------- faq ---------- */
 .faq-wrap{max-width:820px;margin:64px auto 0}
@@ -429,9 +435,10 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   .ind-desc{display:none}
   .lms-cert{right:8px;bottom:-16px}
   .f-row{grid-template-columns:1fr}
-  .t-role{position:static;display:block;margin-bottom:10px}
-  .t-card::before{position:static;display:block;height:.4em}
-  .t-quote{margin-top:8px}
+  .testi-grid{gap:32px}
+  .t-item{padding:0}
+  .t-item+.t-item{padding-top:32px}
+  .t-item+.t-item::before{left:0;right:0;top:0;bottom:auto;width:auto;height:1px;background:linear-gradient(90deg,var(--gold-line),transparent)}
 }
 </style>
 </head>
@@ -745,27 +752,26 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
-<section class="testi">
+<!-- TODO: replace both .t-pending slots with the real quotes (Bethel + EdenRise).
+     To publish a slot: delete class="t-pending" from the <article>, put the real
+     words in .t-quote, and set the real name + role in .t-attr. -->
+<section class="testi" aria-labelledby="testi-h">
   <div class="wrap">
-    <div class="center">
-      <div class="eyebrow rv">Trusted by employers — and by workers</div>
-      <h2 class="mh">Two sides. One <em>partnership</em>.</h2>
+    <div class="testi-head">
+      <h2 class="mh" id="testi-h">In their <em>own words</em>.</h2>
+      <span class="testi-meta">Employers we work with</span>
     </div>
     <div class="testi-grid">
-      <article class="t-card rv">
-        <span class="t-role">Employer</span>
-        <p class="t-quote">We had tried three agencies before Ponte. The difference was everything after arrival — the check-ins, the coaching, the way problems were solved before they grew. Two years later, the whole team is still with us.</p>
-        <div class="t-person">
-          <div class="t-avatar"><img src="assets/meeting-a.jpg" alt="" loading="lazy" width="1067" height="1600"></div>
-          <div><b>Operations Director</b><small>Hospitality group · Algarve, Portugal</small></div>
+      <article class="t-item t-pending rv">
+        <p class="t-quote">Testimonial to follow.</p>
+        <div class="t-attr">
+          <b>Bethel</b><span class="t-rule" aria-hidden="true"></span><span class="t-org">Awaiting approval</span>
         </div>
       </article>
-      <article class="t-card rv">
-        <span class="t-role">Worker</span>
-        <p class="t-quote">Ponte prepared me for everything — the documents, the flight, my first week. And they didn't disappear afterwards. I finished my training certificate last month. My manager noticed.</p>
-        <div class="t-person">
-          <div class="t-avatar"><img src="assets/worker-b.jpg" alt="" loading="lazy" width="1600" height="1000"></div>
-          <div><b>Skilled Tradesman</b><small>From Maputo · working in Lisbon</small></div>
+      <article class="t-item t-pending rv">
+        <p class="t-quote">Testimonial to follow.</p>
+        <div class="t-attr">
+          <b>EdenRise</b><span class="t-rule" aria-hidden="true"></span><span class="t-org">Awaiting approval</span>
         </div>
       </article>
     </div>
