@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ponte — Workforce Consultancy | Portuguese-Speaking Talent for Portugal &amp; Germany</title>
-<meta name="description" content="Ponte helps businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking workers from Mozambique, Angola and other Lusophone countries. Recruitment, cultural integration, employer consulting and workforce training in one consultancy.">
+<title>X Consulting — Workforce Consultancy | Portuguese-Speaking Talent for Portugal &amp; Germany</title>
+<meta name="description" content="X Consulting helps businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking workers from Mozambique, Angola and other Lusophone countries. Recruitment, cultural integration, employer consulting and workforce training in one consultancy.">
 <meta name="keywords" content="Portuguese-speaking workers, recruitment Portugal, recruitment Germany, Mozambique workers, Angola recruitment, workforce consultancy, international recruitment, employee integration, cultural integration, workforce training, employer support, skilled labour Portugal, skilled labour Germany">
 <meta name="theme-color" content="#0E1E42">
-<meta property="og:title" content="Ponte — Workforce Consultancy">
+<meta property="og:title" content="X Consulting — Workforce Consultancy">
 <meta property="og:description" content="Building stronger teams through skilled Portuguese-speaking talent. Recruitment, relocation, integration and workforce development for employers in Portugal and Germany.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://meridante-dev.github.io/ponte-workforce/">
@@ -21,7 +21,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Ponte Workforce Consultancy",
+  "name": "X Consulting",
   "description": "Consultancy helping businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking workers from Mozambique, Angola and other Lusophone countries.",
   "areaServed": ["Portugal", "Germany"],
   "knowsLanguage": ["pt", "en", "de"],
@@ -95,6 +95,12 @@ html.cine .veil{display:grid}
 .veil-mark svg{width:74px;height:74px;overflow:visible}
 .veil-word{font-family:var(--serif);font-size:1.5rem;font-weight:500;color:#F0EDE6;letter-spacing:.6em;text-indent:.6em;opacity:0}
 .veil-sub{font-family:var(--mono);font-size:.68rem;letter-spacing:.3em;color:rgba(217,184,124,.8);text-transform:uppercase;opacity:0}
+/* "X CONSULTING" is long; at .6em tracking it overruns narrow screens */
+@media(max-width:560px){
+  .veil-mark svg{width:58px;height:58px}
+  .veil-word{font-size:1.05rem;letter-spacing:.34em;text-indent:.34em}
+  .veil-sub{font-size:.58rem;letter-spacing:.22em}
+}
 html.cine [data-cine]{opacity:0}
 
 /* ---------- typography ---------- */
@@ -134,7 +140,6 @@ header.hid{transform:translateY(-102%)}
 .logo svg{width:34px;height:34px}
 .logo-name{font-family:var(--serif);font-size:1.42rem;font-weight:560;color:var(--navy);letter-spacing:.01em}
 .logo-name span{color:var(--gold-2)}
-.logo-sub{display:block;font-family:var(--mono);font-size:.55rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--faint);margin-top:2px}
 .nav-links{display:flex;gap:36px;align-items:center}
 .nav-links a{font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);position:relative;padding:6px 0}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--gold-2);transition:width .4s var(--ease)}
@@ -398,6 +403,13 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   .mcta .btn{width:100%;justify-content:center;padding:15px}
 }
 
+/* Narrow phones: the wordmark + header CTA + burger no longer fit on one row.
+   Drop the header CTA — the hero button and the sticky bottom bar both cover it. */
+@media(max-width:400px){
+  .nav-cta .btn-primary{display:none}
+  .logo svg{width:28px;height:28px}
+}
+
 /* ---------- reveal defaults ---------- */
 .rv{opacity:0;transform:translateY(28px)}
 @media (prefers-reduced-motion:reduce){
@@ -429,6 +441,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   .why-quote{right:0;bottom:20px}
   .nav-links,.nav-cta .btn-ghost{display:none}
   .nav-cta .btn-primary{padding:11px 16px;font-size:.84rem;white-space:nowrap}
+  .logo-name{font-size:1.2rem}
   .burger{display:block}
   header{background:rgba(255,255,255,.86);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%)}
   .mobile-menu{display:block;position:fixed;inset:0;background:#fff;z-index:55;padding:120px 36px;transform:translateX(100%);visibility:hidden;transition:transform .45s var(--ease),visibility 0s .45s}
@@ -463,19 +476,16 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
       <path id="arc1" pathLength="100" d="M8 48 C 8 26, 56 26, 56 48" stroke="#F0EDE6" stroke-width="5" stroke-linecap="round"/>
       <path id="arc2" pathLength="100" d="M20 48 C 20 36, 44 36, 44 48" stroke="#D9B87C" stroke-width="4" stroke-linecap="round"/>
     </svg>
-    <div class="veil-word" id="veilWord">PONTE</div>
+    <div class="veil-word" id="veilWord">X CONSULTING</div>
     <div class="veil-sub" id="veilSub">Workforce Consultancy</div>
   </div>
 </div>
 
 <header id="top">
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="Ponte Workforce Consultancy — home" data-cine>
+    <a class="logo" href="#top" aria-label="X Consulting — home" data-cine>
       <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 48 C 8 26, 56 26, 56 48" fill="none" stroke="#1E3A8A" stroke-width="7" stroke-linecap="round"/><path d="M20 48 C 20 36, 44 36, 44 48" fill="none" stroke="#B45309" stroke-width="5" stroke-linecap="round"/></svg>
-      <span>
-        <span class="logo-name">Ponte<span>.</span></span>
-        <span class="logo-sub">Workforce Consultancy</span>
-      </span>
+      <span class="logo-name">X Consulting</span>
     </a>
     <nav class="nav-links" aria-label="Main">
       <a href="#services" data-cine data-sec="services">Services</a>
@@ -678,7 +688,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     </div>
     <div class="lms rv" aria-hidden="true">
       <div class="lms-window">
-        <div class="lms-bar"><i></i><i></i><i></i><span>PONTE LEARNING — MY COURSES</span></div>
+        <div class="lms-bar"><i></i><i></i><i></i><span>X CONSULTING LEARNING — MY COURSES</span></div>
         <div class="lms-body">
           <div class="lms-row">
             <div class="lms-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2 3 7l9 5 9-5-9-5zM3 12l9 5 9-5M3 17l9 5 9-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -728,7 +738,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   <div class="band-bg curtain" aria-hidden="true"><img src="assets/waiter.jpg" alt="" loading="lazy" width="1600" height="1063"></div>
   <div class="wrap">
     <blockquote id="bandQuote">Every worker we place carries two things: the skills your business needs, and a language your team already shares.</blockquote>
-    <cite class="rv">The Ponte difference</cite>
+    <cite class="rv">The X Consulting difference</cite>
   </div>
 </section>
 
@@ -737,14 +747,14 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   <div class="wrap about-grid">
     <div class="about-visual rv">
       <div class="about-frame" aria-hidden="true"></div>
-      <div class="about-photo curtain"><img src="assets/founder-a.jpg" alt="Portrait of Ponte's founder" loading="lazy"></div>
+      <div class="about-photo curtain"><img src="assets/founder-a.jpg" alt="Portrait of X Consulting's founder" loading="lazy"></div>
     </div>
     <div class="about">
       <div class="eyebrow rv">About us</div>
       <h2 class="mh">Born in Mozambique. Built for <em>both sides</em> of the table.</h2>
-      <p class="rv" style="margin-top:24px">Ponte was founded by a Mozambican professional who has spent years helping businesses in Portugal recruit and integrate Portuguese-speaking workers — and helping those workers build stable lives far from home.</p>
+      <p class="rv" style="margin-top:24px">X Consulting was founded by a Mozambican professional who has spent years helping businesses in Portugal recruit and integrate Portuguese-speaking workers — and helping those workers build stable lives far from home.</p>
       <p class="rv">That double perspective is our advantage. <b>We understand what employers need:</b> reliability, clear communication and teams that stay. <b>And we understand what workers need:</b> honest guidance, fair treatment and a real chance to grow.</p>
-      <p class="rv">Today, Ponte is a trusted advisor to companies across Portugal and Germany — building stable, productive, multicultural teams that last.</p>
+      <p class="rv">Today, X Consulting is a trusted advisor to companies across Portugal and Germany — building stable, productive, multicultural teams that last.</p>
       <div class="about-sig rv">
         <span class="sig-line" aria-hidden="true"></span>
         <div><b>Founder &amp; Managing Director</b><small>Maputo · Lisboa · Frankfurt</small></div>
@@ -754,9 +764,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
-<!-- Both quotes client-approved 2026-07-17, reproduced in full and verbatim.
-     "Ponte" stands in for the company name the client gave as "X Consulting" —
-     update both quotes (and the hero excerpt) when the real name is decided. -->
+<!-- Both quotes client-approved 2026-07-17, reproduced in full and verbatim. -->
 <section class="testi" aria-labelledby="testi-h">
   <div class="wrap">
     <div class="testi-head">
@@ -765,13 +773,13 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     </div>
     <div class="testi-grid">
       <article class="t-item rv">
-        <p class="t-quote">Working with Ponte has been a fantastic experience. They have supplied us with a number of skilled construction workers across different trades, and we've been impressed not only by the quality of the recruitment but also by the integration and ongoing support they provide. Their team genuinely cares about long-term success, and we wouldn't hesitate to recommend them to others.</p>
+        <p class="t-quote">Working with X Consulting has been a fantastic experience. They have supplied us with a number of skilled construction workers across different trades, and we've been impressed not only by the quality of the recruitment but also by the integration and ongoing support they provide. Their team genuinely cares about long-term success, and we wouldn't hesitate to recommend them to others.</p>
         <div class="t-attr">
           <b>Bethel &amp; Harvey Lda</b><span class="t-rule" aria-hidden="true"></span><span class="t-org">Construction</span>
         </div>
       </article>
       <article class="t-item rv">
-        <p class="t-quote">Due to the shortage of skilled labour in the areas we required, we engaged Ponte to help source additional team members. We've been incredibly happy with the four builders they have recruited for us—their work ethic, attitude, and reliability have been outstanding, and they've become a real asset to our team. The recruitment process and ongoing support have been excellent, and we're looking forward to welcoming two more team members into our gardening and land care department very soon. We highly recommend their services.</p>
+        <p class="t-quote">Due to the shortage of skilled labour in the areas we required, we engaged X Consulting to help source additional team members. We've been incredibly happy with the four builders they have recruited for us—their work ethic, attitude, and reliability have been outstanding, and they've become a real asset to our team. The recruitment process and ongoing support have been excellent, and we're looking forward to welcoming two more team members into our gardening and land care department very soon. We highly recommend their services.</p>
         <div class="t-attr">
           <b>EdenRise Lda</b><span class="t-rule" aria-hidden="true"></span><span class="t-org">Construction &amp; land care</span>
         </div>
@@ -901,9 +909,9 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="logo" href="#top" aria-label="Ponte — back to top">
+        <a class="logo" href="#top" aria-label="X Consulting — back to top">
           <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><path d="M8 48 C 8 26, 56 26, 56 48" fill="none" stroke="#7C9BEA" stroke-width="7" stroke-linecap="round"/><path d="M20 48 C 20 36, 44 36, 44 48" fill="none" stroke="#D9B87C" stroke-width="5" stroke-linecap="round"/></svg>
-          <span><span class="logo-name">Ponte<span style="color:#D9B87C">.</span></span></span>
+          <span class="logo-name">X Consulting</span>
         </a>
         <p>A workforce consultancy helping businesses in Portugal and Germany recruit, relocate, integrate and develop skilled Portuguese-speaking professionals from Mozambique, Angola and other Lusophone countries.</p>
       </div>
@@ -938,7 +946,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Ponte Workforce Consultancy</span>
+      <span>© 2026 X Consulting</span>
       <span>Maputo · Lisboa · Frankfurt</span>
     </div>
   </div>
