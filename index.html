@@ -187,16 +187,6 @@ header.hid{transform:translateY(-102%)}
 @keyframes cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 @media (prefers-reduced-motion:reduce){.scroll-cue i{animation:none}}
 
-/* ---------- stats ---------- */
-.stats{padding:clamp(56px,7vw,80px) 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{text-align:center;padding:6px 20px;position:relative}
-.stat+.stat::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);height:64px;width:1px;background:linear-gradient(180deg,transparent,var(--gold-line),transparent)}
-.stat-num{font-family:var(--serif);font-size:clamp(2.7rem,4.2vw,3.7rem);font-weight:460;color:var(--navy);line-height:1;font-variation-settings:"opsz" 120}
-.stat-num sup{font-size:.42em;color:var(--gold-2);top:-.85em;position:relative;vertical-align:baseline}
-.stat-label{margin-top:12px;font-size:.92rem;color:var(--muted)}
-.stat-src{margin-top:6px;font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
-
 /* ---------- why ---------- */
 .why{background:var(--bg-soft)}
 .why-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(44px,7vw,84px);align-items:center}
@@ -334,14 +324,14 @@ header.hid{transform:translateY(-102%)}
 .testi-head h2{font-size:clamp(1.5rem,2.3vw,1.95rem)}
 .testi-head .testi-meta{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
 .testi-grid{display:grid;grid-template-columns:1fr 1fr}
-.t-item{padding:0 clamp(26px,3.4vw,48px);position:relative}
+.t-item{padding:0 clamp(26px,3.4vw,48px);position:relative;display:flex;flex-direction:column}
 .t-item:first-child{padding-left:0}
 .t-item:last-child{padding-right:0}
 .t-item+.t-item::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:1px;background:linear-gradient(180deg,transparent,var(--gold-line),transparent)}
 .t-quote{font-family:var(--serif);font-size:1.06rem;line-height:1.62;color:var(--navy);font-weight:400}
 .t-quote::before{content:"“";color:var(--gold-line);margin-right:1px}
 .t-quote::after{content:"”";color:var(--gold-line)}
-.t-attr{margin-top:20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.t-attr{margin-top:auto;padding-top:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .t-attr b{font-size:.9rem;color:var(--navy);font-weight:600}
 .t-attr .t-rule{width:18px;height:1px;background:var(--gold-line);flex-shrink:0}
 .t-attr .t-org{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
@@ -428,8 +418,6 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
   .services-head{grid-template-columns:1fr;gap:20px}
   .services-head .lede{justify-self:start}
   .pkg-grid,.testi-grid{grid-template-columns:1fr}
-  .stats-grid{grid-template-columns:1fr 1fr;gap:38px 0}
-  .stat:nth-child(3)::before{display:none}
   .hero-card{left:12px;bottom:20px}
   /* below tablet the card sits under the photo instead of covering it */
   .hero-testi{position:static;width:auto;margin-top:18px;padding:22px 24px}
@@ -538,7 +526,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
       <!-- HERO TESTIMONIAL — short contiguous excerpt of the full EdenRise quote
            carried in the testimonials band below. Client-approved 2026-07-17. -->
       <figure class="hero-testi" data-ready="true">
-        <blockquote>Their work ethic, attitude, and reliability have been noticeably stronger than what we've typically experienced locally, and they've become a real asset to our team.</blockquote>
+        <blockquote>We've been incredibly happy with the four builders they have recruited for us—their work ethic, attitude, and reliability have been outstanding, and they've become a real asset to our team.</blockquote>
         <figcaption>
           <b>EdenRise Lda</b><span class="t-rule" aria-hidden="true"></span><span class="t-org">Construction &amp; land care</span>
         </figcaption>
@@ -550,17 +538,6 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     </div>
   </div>
   <div class="scroll-cue" aria-hidden="true" data-cine><span>Scroll</span><i></i></div>
-</section>
-
-<!-- ============ STATS ============ -->
-<section class="stats" aria-labelledby="stats-h">
-  <h2 class="sr-only" id="stats-h">Key figures</h2>
-  <div class="wrap stats-grid">
-    <div class="stat rv"><div class="stat-num"><span class="count" data-to="12">0</span><sup>+</sup></div><div class="stat-label">Years of workforce experience</div><div class="stat-src">Both sides of the corridor</div></div>
-    <div class="stat rv"><div class="stat-num"><span class="count" data-to="400">0</span><sup>+</sup></div><div class="stat-label">Workers successfully placed</div><div class="stat-src">Placements to date</div></div>
-    <div class="stat rv"><div class="stat-num"><span class="count" data-to="94">0</span><sup>%</sup></div><div class="stat-label">Retention after the first year</div><div class="stat-src">Measured across clients</div></div>
-    <div class="stat rv"><div class="stat-num"><span class="count" data-to="2">0</span></div><div class="stat-label">Countries served</div><div class="stat-src">Portugal · Germany</div></div>
-  </div>
 </section>
 
 <!-- ============ WHY ============ -->
@@ -794,7 +771,7 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
         </div>
       </article>
       <article class="t-item rv">
-        <p class="t-quote">We've been incredibly happy with the four builders that Ponte has helped us recruit. Their work ethic, attitude, and reliability have been noticeably stronger than what we've typically experienced locally, and they've become a real asset to our team. The recruitment process and ongoing support have been excellent, and we're excited to welcome two more team members in our gardening and land care department very soon. We highly recommend their services.</p>
+        <p class="t-quote">Due to the shortage of skilled labour in the areas we required, we engaged Ponte to help source additional team members. We've been incredibly happy with the four builders they have recruited for us—their work ethic, attitude, and reliability have been outstanding, and they've become a real asset to our team. The recruitment process and ongoing support have been excellent, and we're looking forward to welcoming two more team members into our gardening and land care department very soon. We highly recommend their services.</p>
         <div class="t-attr">
           <b>EdenRise Lda</b><span class="t-rule" aria-hidden="true"></span><span class="t-org">Construction &amp; land care</span>
         </div>
@@ -1052,7 +1029,6 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     document.documentElement.style.scrollBehavior = "auto";
     document.querySelectorAll(".rv").forEach(function(el){ el.style.opacity = 1; el.style.transform = "none"; });
     document.querySelectorAll(".lms-track i").forEach(function(b){ b.style.width = b.dataset.w; });
-    document.querySelectorAll(".count").forEach(function(c){ c.textContent = c.dataset.to; });
     var sf = document.getElementById("stepsFill"); if (sf) sf.style.transform = "scaleX(1)";
     document.querySelectorAll(".step").forEach(function(s){ s.classList.add("on"); });
     var mctaS = document.getElementById("mcta"), contactS = document.getElementById("contact");
@@ -1174,14 +1150,6 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
     scrollTrigger:{trigger:".hero", start:"top top", end:"bottom top", scrub:true}});
   gsap.fromTo(".band-bg img", {yPercent:-8}, {yPercent:4, ease:"none",
     scrollTrigger:{trigger:".band", start:"top bottom", end:"bottom top", scrub:true}});
-
-  /* ---------- stats count-up ---------- */
-  document.querySelectorAll(".count").forEach(function(c){
-    var to = +c.dataset.to, obj = {v:0};
-    gsap.to(obj, {v:to, duration:1.6, ease:"power1.out",
-      scrollTrigger:{trigger:c, start:"top 90%", once:true},
-      onUpdate:function(){ c.textContent = Math.round(obj.v); }});
-  });
 
   /* ---------- process: scrubbed gold fill + step activation ---------- */
   gsap.to("#stepsFill", {scaleX:1, ease:"none",
