@@ -328,7 +328,7 @@ header.hid{transform:translateY(-102%)}
 .testi-head{display:flex;align-items:baseline;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-bottom:clamp(36px,4vw,52px)}
 .testi-head h2{font-size:clamp(1.5rem,2.3vw,1.95rem)}
 .testi-head .testi-meta{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
-.testi-grid{display:grid;grid-template-columns:1fr 1fr}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr)}
 .t-item{padding:0 clamp(26px,3.4vw,48px);position:relative;display:flex;flex-direction:column}
 .t-item:first-child{padding-left:0}
 .t-item:last-child{padding-right:0}
@@ -336,9 +336,9 @@ header.hid{transform:translateY(-102%)}
 .t-quote{font-family:var(--serif);font-size:1.06rem;line-height:1.62;color:var(--navy);font-weight:400}
 .t-quote::before{content:"“";color:var(--gold-line);margin-right:1px}
 .t-quote::after{content:"”";color:var(--gold-line)}
-.t-attr{margin-top:auto;padding-top:22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.t-attr{margin-top:auto;padding-top:24px;display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.t-attr .t-rule{width:22px;height:1px;background:var(--gold-line);margin-bottom:5px}
 .t-attr b{font-size:.9rem;color:var(--navy);font-weight:600}
-.t-attr .t-rule{width:18px;height:1px;background:var(--gold-line);flex-shrink:0}
 .t-attr .t-org{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 .t-pending .t-quote{color:var(--faint);font-style:italic}
 .t-pending .t-quote::before,.t-pending .t-quote::after{content:none}
@@ -418,6 +418,9 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
 
 /* ---------- responsive ---------- */
 @media(max-width:1060px){
+  .testi-grid{grid-template-columns:1fr 1fr;gap:36px 0}
+  .t-item:nth-child(3){padding-left:0;padding-top:36px;grid-column:1/-1}
+  .t-item:nth-child(3)::before{left:0;right:0;top:0;bottom:auto;width:auto;height:1px;background:linear-gradient(90deg,var(--gold-line),transparent)}
   .steps{grid-template-columns:repeat(4,1fr);gap:44px 0}
   .steps-rail,.steps-fill{display:none}
   .step i{position:static;display:block;margin-bottom:14px}
@@ -775,13 +778,19 @@ footer{background:var(--navy);color:#93A3C2;padding:0 0 42px;font-size:.92rem;po
       <article class="t-item rv">
         <p class="t-quote">Working with X Consulting has been a fantastic experience. They have supplied us with a number of skilled construction workers across different trades, and we've been impressed not only by the quality of the recruitment but also by the integration and ongoing support they provide. Their team genuinely cares about long-term success, and we wouldn't hesitate to recommend them to others.</p>
         <div class="t-attr">
-          <b>Bethel &amp; Harvey Lda</b><span class="t-rule" aria-hidden="true"></span><span class="t-org">Construction</span>
+          <span class="t-rule" aria-hidden="true"></span><b>Bethel &amp; Harvey Lda</b><span class="t-org">Construction</span>
         </div>
       </article>
       <article class="t-item rv">
         <p class="t-quote">Due to the shortage of skilled labour in the areas we required, we engaged X Consulting to help source additional team members. We've been incredibly happy with the four builders they have recruited for us—their work ethic, attitude, and reliability have been outstanding, and they've become a real asset to our team. The recruitment process and ongoing support have been excellent, and we're looking forward to welcoming two more team members into our gardening and land care department very soon. We highly recommend their services.</p>
         <div class="t-attr">
-          <b>EdenRise Lda</b><span class="t-rule" aria-hidden="true"></span><span class="t-org">Construction &amp; land care</span>
+          <span class="t-rule" aria-hidden="true"></span><b>EdenRise Lda</b><span class="t-org">Construction &amp; land care</span>
+        </div>
+      </article>
+      <article class="t-item t-pending rv">
+        <p class="t-quote">Testimonial to follow.</p>
+        <div class="t-attr">
+          <span class="t-rule" aria-hidden="true"></span><b>João Restaurant</b><span class="t-org">Hospitality · Algarve</span>
         </div>
       </article>
     </div>
